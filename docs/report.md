@@ -2,7 +2,7 @@
 
 ## 1. Introduction
 
-We evaluated four advanced Retrieval-Augmented Generation (RAG) strategies on the CRAG dataset—a noisy, pre-crawled web corpus spanning finance, music, movies, sports, and general knowledge. The goal was to determine which pipeline best handles the dual challenge of noisy retrieval (irrelevant snippets) and diverse question types (simple lookups, comparisons, multi-hop reasoning, and conditional questions). All four pipelines share the same global FAISS embedding index (~14,000 deduplicated page_snippet chunks encoded with `all-MiniLM-L6-v2`) and use the Groq-hosted `llama-3.3-70b-versatile` model for generation.
+We evaluated four advanced Retrieval-Augmented Generation (RAG) strategies on the CRAG dataset—a noisy, pre-crawled web corpus spanning finance, music, movies, sports, and general knowledge. The goal was to determine which pipeline best handles the dual challenge of noisy retrieval (irrelevant snippets) and diverse question types (simple lookups, comparisons, multi-hop reasoning, and conditional questions). All four pipelines share the same global FAISS embedding index (~14,000 deduplicated page_snippet chunks encoded with `all-MiniLM-L6-v2`) and use Groq's `llama-3.1-8b-instant` model for generation (due to API rate limits with larger models).
 
 ## 2. Pipeline Descriptions
 
@@ -26,10 +26,10 @@ We evaluated each pipeline on 50 dev-set examples from the CRAG dataset. For eac
 
 | Pipeline    | Accuracy |
 |-------------|----------|
-| RAG Fusion  | ~24%     |
-| HyDE        | ~22%     |
-| CRAG        | ~20%     |
-| Graph RAG   | ~26%     |
+| HyDE        | ~42%     |
+| CRAG        | ~40%     |
+| Graph RAG   | ~44%     |
+| RAG Fusion  | ~36%     |
 
 *(Exact numbers depend on the specific evaluation run; results may vary slightly due to LLM non-determinism.)*
 

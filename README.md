@@ -41,7 +41,7 @@ pip install tenacity # Ensures API rate-limiting is handled gracefully
 ```
 
 ### 2. Configure Your Environment
-You will need a free API key from [Groq](https://console.groq.com/keys) to power the LLM (`llama-3.3-70b-versatile`).
+You will need a free API key from [Groq](https://console.groq.com/keys) to power the LLM (`llama-3.1-8b-instant`).
 1. Copy the example config: `cp config/config.example.yaml config/config.yaml`
 2. Open `config/config.yaml` and paste your Groq API key into the `groq_api_key` field.
 
