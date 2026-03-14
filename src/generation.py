@@ -1,8 +1,8 @@
 import os
 import yaml
 import time
+import re
 from groq import Groq
-from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 
 def get_groq_client():
     config_path = os.path.join(os.path.dirname(__file__), "..", "config", "config.yaml")
@@ -19,20 +19,38 @@ def get_model_name():
         config = yaml.safe_load(f)
     return config.get("generation_model", "llama-3.3-70b-versatile")
 
-@retry(
-    stop=stop_after_attempt(5),
-    wait=wait_exponential(multiplier=2, min=4, max=60),
-    retry=retry_if_exception_type(Exception)
-)
 def _call_llm_with_retry(client, model, messages, response_format):
-    completion = client.chat.completions.create(
-        model=model,
-        messages=messages,
-        temperature=0.0,
-        max_tokens=500,
-        response_format=response_format
-    )
-    return completion.choices[0].message.content.strip()
+    max_retries = 20 # High enough to ride out rolling daily token limits
+    for attempt in range(max_retries):
+        try:
+            completion = client.chat.completions.create(
+                model=model,
+                messages=messages,
+                temperature=0.0,
+                max_tokens=500,
+                response_format=response_format
+            )
+            return completion.choices[0].message.content.strip()
+        except Exception as e:
+            error_msg = str(e)
+            # Look for Groq's rate limit window: "Please try again in 24m43.488s."
+            if "Rate limit reached" in error_msg and "Please try again in" in error_msg:
+                match = re.search(r"Please try again in (?:(\d+)h)?(?:(\d+)m)?([\d\.]+)s", error_msg)
+                if match:
+                    hours = float(match.group(1)) if match.group(1) else 0.0
+                    mins = float(match.group(2)) if match.group(2) else 0.0
+                    secs = float(match.group(3)) if match.group(3) else 0.0
+                    wait_time = hours * 3600 + mins * 60 + secs + 2.0 # 2 seconds buffer
+                    print(f"    [Rate Limit] Waiting {wait_time:.1f} seconds for token bucket to refill...")
+                    time.sleep(wait_time)
+                    continue
+            
+            if attempt < max_retries - 1:
+                wait_time = 2 ** attempt
+                print(f"    [API Error] {error_msg}. Retrying in {wait_time}s...")
+                time.sleep(wait_time)
+            else:
+                raise e
 
 def call_llm(prompt: str, system_message: str = "You are a helpful and accurate assistant.", json_mode: bool = False) -> str:
     client = get_groq_client()
