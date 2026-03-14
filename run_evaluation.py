@@ -19,7 +19,7 @@ def main():
 
     # 1. Load Data
     print("Loading dev examples for evaluation...")
-    examples = list(data_loader.load_examples(dataset_path, limit=15))
+    examples = list(data_loader.load_examples(dataset_path, limit=50))
     print(f"Loaded {len(examples)} evaluation examples.")
 
     # 2. Build or Load Index
