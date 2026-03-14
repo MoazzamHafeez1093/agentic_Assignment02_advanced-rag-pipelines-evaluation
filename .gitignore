@@ -1,0 +1,20 @@
+config/config.yaml
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Large binaries and datasets
+dataset/*.faiss
+dataset/*.pkl
+dataset/*.jsonl
+dataset/*.bz2
+
+# Test script
+test_pipelines.py
