@@ -1,6 +1,8 @@
 import os
 import yaml
+import time
 from groq import Groq
+from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 
 def get_groq_client():
     config_path = os.path.join(os.path.dirname(__file__), "..", "config", "config.yaml")
@@ -17,6 +19,21 @@ def get_model_name():
         config = yaml.safe_load(f)
     return config.get("generation_model", "llama-3.3-70b-versatile")
 
+@retry(
+    stop=stop_after_attempt(5),
+    wait=wait_exponential(multiplier=2, min=4, max=60),
+    retry=retry_if_exception_type(Exception)
+)
+def _call_llm_with_retry(client, model, messages, response_format):
+    completion = client.chat.completions.create(
+        model=model,
+        messages=messages,
+        temperature=0.0,
+        max_tokens=500,
+        response_format=response_format
+    )
+    return completion.choices[0].message.content.strip()
+
 def call_llm(prompt: str, system_message: str = "You are a helpful and accurate assistant.", json_mode: bool = False) -> str:
     client = get_groq_client()
     model = get_model_name()
@@ -29,16 +46,11 @@ def call_llm(prompt: str, system_message: str = "You are a helpful and accurate 
     response_format = {"type": "json_object"} if json_mode else None
     
     try:
-        completion = client.chat.completions.create(
-            model=model,
-            messages=messages,
-            temperature=0.0, # mostly need deterministic, factual answers
-            max_tokens=500,
-            response_format=response_format
-        )
-        return completion.choices[0].message.content.strip()
+        return _call_llm_with_retry(client, model, messages, response_format)
     except Exception as e:
-        print(f"Error calling LLM: {e}")
+        print(f"Error calling LLM after retries: {e}")
+        # Add a sleep to prevent immediate failure cascade
+        time.sleep(5)
         return ""
 
 def format_context(chunks: list[dict]) -> str:
