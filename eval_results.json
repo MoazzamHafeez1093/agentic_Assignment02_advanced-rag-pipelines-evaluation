@@ -1,0 +1,2250 @@
+{
+  "summary": {
+    "RAG Fusion": {
+      "accuracy": 36.0,
+      "correct": 18,
+      "total": 50
+    },
+    "HyDE": {
+      "accuracy": 42.0,
+      "correct": 21,
+      "total": 50
+    },
+    "CRAG": {
+      "accuracy": 40.0,
+      "correct": 20,
+      "total": 50
+    },
+    "Graph RAG": {
+      "accuracy": 38.0,
+      "correct": 19,
+      "total": 50
+    }
+  },
+  "details": {
+    "RAG Fusion": [
+      {
+        "query": "how many 3-point attempts did steve nash average per game in seasons he made the 50-40-90 club?",
+        "predicted": "Based on the provided context, we can see that Steve Nash made the 50-40-90 club in the 2005-06, 2007-08, 2008-09, and 2009-10 seasons. \n\nAccording to the context, in the 2005-06 season, Nash shot 43.9% from three-point range. However, it does not provide the exact number of three-point attempts per game.\n\nTo find the exact number of three-point attempts per game, we would need more information. However, we can see that in the 2007-08 season, Nash shot 43.9% from three-point range, which is the same as the 2005-06 season. \n\nUnfortunately, the provided context does not provide the exact number of three-point attempts per game for the 2007-08 season.",
+        "gold_answer": "4 3-points attempts per game",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0656,
+          0.0645,
+          0.0635
+        ]
+      },
+      {
+        "query": "what is a movie to feature a person who can create and control a device that can manipulate the laws of physics?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "a movie that features a person who can create and control a device that can manipulate the laws of physics was \"the core\" in 2003, which starred aaron eckhart as a scientist who invents a device that can manipulate the laws of physics, allowing him to control gravity, time, and matter, and he must use this technology to save the earth from destruction after the planet's core suddenly stops rotating.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.065,
+          0.0643,
+          0.064
+        ]
+      },
+      {
+        "query": "where did the ceo of salesforce previously work?",
+        "predicted": "According to the context, Marc Benioff, the CEO of Salesforce, previously worked at Oracle as a former executive.",
+        "gold_answer": "marc benioff spent 13 years at oracle, before launching salesforce.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0653,
+          0.0648,
+          0.0628
+        ]
+      },
+      {
+        "query": "which movie won the oscar best visual effects in 2021?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "tenet",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0656,
+          0.064,
+          0.0481
+        ]
+      },
+      {
+        "query": "what company in the dow jones is the best performer today?",
+        "predicted": "I do not know based on the context. The sources provided do not contain information on the current best performer in the Dow Jones.",
+        "gold_answer": "salesforce",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0627,
+          0.0487,
+          0.0479
+        ]
+      },
+      {
+        "query": "in 2004, which animated film was recognized with the best animated feature film oscar?",
+        "predicted": "The film \"The Incredibles\" was recognized with the Best Animated Feature Film Oscar in 2004.",
+        "gold_answer": "finding nemo",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0646,
+          0.0643,
+          0.063
+        ]
+      },
+      {
+        "query": "on which date did sgml distribute dividends the first time",
+        "predicted": "I do not know based on the context. The context does not contain enough information to determine the date when SGML distributed dividends for the first time.",
+        "gold_answer": "none of the days",
+        "alt_ans": [
+          "invalid question"
+        ],
+        "retrieval_scores": [
+          0.065,
+          0.065,
+          0.062
+        ]
+      },
+      {
+        "query": "what is the average gross for the top 3 pixar movies?",
+        "predicted": "To find the average gross for the top 3 Pixar movies, we need to identify the top 3 highest-grossing Pixar movies. \n\nAccording to the provided context, the top 3 highest-grossing Pixar movies are:\n\n1. Toy Story 4 - $1.07 billion\n2. Incredibles 2 - (not mentioned in the provided context, but according to other sources, it is the second-highest-grossing Pixar movie)\n3. Finding Nemo - (not mentioned in the provided context, but according to other sources, it is the third-highest-grossing Pixar movie)\n\nHowever, since Finding Nemo's gross is not mentioned in the provided context, we cannot calculate the average gross for the top 3 Pixar movies accurately.",
+        "gold_answer": "~$509,638,437",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0648,
+          0.0643,
+          0.064
+        ]
+      },
+      {
+        "query": "what are the countries that are located in southern africa.",
+        "predicted": "The countries located in Southern Africa are Angola, Botswana, Lesotho, Mozambique, Namibia, South Africa, Swaziland, Zambia, and Zimbabwe.",
+        "gold_answer": "angola, botswana, the comoros, eswatini, lesotho, madagascar, malawi, mauritius, mozambique, namibia, south africa, zambia, and zimbabwe.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0656,
+          0.0645,
+          0.063
+        ]
+      },
+      {
+        "query": "which company in the s&p 500 index has the highest percentage of green energy usage?",
+        "predicted": "I do not know based on the provided context. The context does not contain information about the companies in the S&P 500 index and their green energy usage.",
+        "gold_answer": "the company with the highest percentage of renewable energy usage in the s&p 500 index is the estee lauder companies inc., with over 139% of its total power usage coming from green energy.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.065,
+          0.065,
+          0.0635
+        ]
+      },
+      {
+        "query": "what's the cooling source of the koeberg nuclear power station?",
+        "predicted": "The Koeberg nuclear power station uses seawater for cooling, which is sourced from the South Atlantic Benguela Current.",
+        "gold_answer": "atlantic ocean",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0656,
+          0.0645,
+          0.0632
+        ]
+      },
+      {
+        "query": "when did hamburg become the biggest city of germany?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "invalid question",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0651,
+          0.0643,
+          0.064
+        ]
+      },
+      {
+        "query": "how much did voyager therapeutics's stock rise in value over the past month?",
+        "predicted": "I do not know based on the context. The provided sources do not contain information about the stock's value over the past month.",
+        "gold_answer": "-$3.26",
+        "alt_ans": [
+          "invalid question"
+        ],
+        "retrieval_scores": [
+          0.0653,
+          0.0648,
+          0.063
+        ]
+      },
+      {
+        "query": "what was the total value of all corporate bond issuances in 2024 for the first week?",
+        "predicted": "According to Source [2], the total value of high-grade corporate bond issuances for the first week of 2024 was $45.2 billion.",
+        "gold_answer": "the first week of 2024 saw nearly $59 billion in high-grade bond issuance.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0656,
+          0.0645,
+          0.0628
+        ]
+      },
+      {
+        "query": "what is the ex-dividend date of microsoft in the 1st qtr of 2024",
+        "predicted": "Based on the provided context, the ex-dividend date of Microsoft in the 1st quarter of 2024 is February 14, 2024 (Source [1]) and May 15, 2024 (Source [2]). However, since the question specifically asks for the 1st quarter of 2024, the answer is May 15, 2024.",
+        "gold_answer": "the ex-dividend date of microsoft in the 1st qtr of 2024 is feb 14, 2024",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0656,
+          0.0645,
+          0.0464
+        ]
+      },
+      {
+        "query": "which player took home grand slam championship in 2017?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "rafael nadal won his 16th grand slam title at the 2017 u.s. open",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0643,
+          0.0635,
+          0.0477
+        ]
+      },
+      {
+        "query": "what is the most active volcano in the philippines?",
+        "predicted": "According to the provided context, the most active volcano in the Philippines is Mt. Mayon, located in the province of Albay in the Bicol region.",
+        "gold_answer": "mayon volcano",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0648,
+          0.064,
+          0.064
+        ]
+      },
+      {
+        "query": "what were 3 of the most watched halloween movies of all time?",
+        "predicted": "I do not know based on the provided context. The sources mention various Halloween movies, but they do not provide information on the most watched Halloween movies of all time.",
+        "gold_answer": "hocus pocus, halloween (2018), beetlejuice",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0653,
+          0.0648,
+          0.0635
+        ]
+      },
+      {
+        "query": "which player has the most career wins in the nfl among quarterbacks who have never been to a super bowl?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "philip rivers has the most career wins in the nfl among quarterbacks who have never been to a super bowl, with 134 wins.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0653,
+          0.0648,
+          0.0635
+        ]
+      },
+      {
+        "query": "how many number one hit songs does lady gaga have?",
+        "predicted": "Lady Gaga has 15 number-one songs.",
+        "gold_answer": "7",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.065,
+          0.065,
+          0.063
+        ]
+      },
+      {
+        "query": "who has had more number one hits on the us billboard dance/electronic songs chart, calvin harris or the chainsmokers?",
+        "predicted": "Based on the provided context, Calvin Harris has had 16 top 10s, but it does not specify if they are all number one hits. The Chainsmokers have had 13 career top 10s, but it also does not specify if they are all number one hits. However, according to Source [5], The Chainsmokers had 3 number one hits on the Hot Dance/Electronic Songs chart in 2016, and according to Source [1], they had 6 total Hot Dance/Electronic Songs No. 1s in 2017. \n\nHowever, according to Source [4], The Chainsmokers have a total of 29 chart hits, and according to Source [1], Calvin Harris has 35 chart hits.",
+        "gold_answer": "the chainsmokers",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0656,
+          0.064,
+          0.0638
+        ]
+      },
+      {
+        "query": "from 1990 to 2000, how many songs did keith sweat release?",
+        "predicted": "I do not know based on the context. The provided sources mention Keith Sweat's albums and singles, but they do not provide a comprehensive list of songs released by Keith Sweat from 1990 to 2000.",
+        "gold_answer": "8",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0656,
+          0.0645,
+          0.0635
+        ]
+      },
+      {
+        "query": "how many games did anthony davis miss in the 2021-2022 regular season?",
+        "predicted": "I do not know based on the context. The context does not mention how many games Anthony Davis missed in the 2021-2022 regular season.",
+        "gold_answer": "40",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0653,
+          0.0643,
+          0.0637
+        ]
+      },
+      {
+        "query": "who were the producers of the movie paul blart: mall cop?",
+        "predicted": "The producers of the movie \"Paul Blart: Mall Cop\" were Kevin James, Adam Sandler, Jack Giarraputo, Todd Garner, and Barry Bernardi.",
+        "gold_answer": "adam sandler, jack giarraputo, kevin james, todd garner, barry bernardi",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0656,
+          0.0645,
+          0.0635
+        ]
+      },
+      {
+        "query": "which company's stock has had the lowest trading activity this week, kind or  casi?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "casi",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0643,
+          0.0484,
+          0.0482
+        ]
+      },
+      {
+        "query": "did taylor swifts debut album fearless launched in 2008 in us?",
+        "predicted": "No, Taylor Swift's debut album was not Fearless. According to the context, Taylor Swift's debut album was self-titled and released on October 24, 2006. Fearless was her second album, released on November 11, 2008.",
+        "gold_answer": "invalid question",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0646,
+          0.0469,
+          0.0323
+        ]
+      },
+      {
+        "query": "which movie won the oscar best visual effects in 2006?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "king kong",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.065,
+          0.064,
+          0.0635
+        ]
+      },
+      {
+        "query": "what's the name of nashville's hockey team?",
+        "predicted": "The Nashville Predators.",
+        "gold_answer": "nashville predators",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0656,
+          0.0645,
+          0.0635
+        ]
+      },
+      {
+        "query": "which university has a higher student-to-faculty ratio, harvard or princeton?",
+        "predicted": "Based on the provided context, Harvard University has a higher student-to-faculty ratio compared to Princeton University. The ratios are as follows: \n\n- Harvard University: 7:1 (Source [1] and Source [3])\n- Princeton University: 4:1 (Source [1])",
+        "gold_answer": "harvard university",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0656,
+          0.0645,
+          0.0635
+        ]
+      },
+      {
+        "query": "who is the person to win best actor award in 1994?",
+        "predicted": "Tom Hanks won the Best Actor award in 1994 for his work in \"Philadelphia\".",
+        "gold_answer": "tom hanks",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0474,
+          0.0469,
+          0.0328
+        ]
+      },
+      {
+        "query": "how long is the longest river in alabama?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "the longest river that flows through alabama, the tennessee river, is 652 miles long.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0656,
+          0.0645,
+          0.0635
+        ]
+      },
+      {
+        "query": "did c\u00e1diz emerge victorious in yesterday's game?",
+        "predicted": "Based on the provided context, I do not have enough information to determine the outcome of yesterday's game.",
+        "gold_answer": "invalid question",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.065,
+          0.0648,
+          0.0637
+        ]
+      },
+      {
+        "query": "can you tell me the earnings per share of lgstw?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "i don't know",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0645,
+          0.0638,
+          0.0479
+        ]
+      },
+      {
+        "query": "what was the closing price of hamilton lane yesterday?",
+        "predicted": "I do not know based on the context. The provided context does not contain information about the closing price of Hamilton Lane (HLNE) for yesterday.",
+        "gold_answer": "$116.95",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0656,
+          0.0645,
+          0.0635
+        ]
+      },
+      {
+        "query": "what are 3 examples of stocks that increased in value today?",
+        "predicted": "I do not know based on the provided context. The context does not contain information about the stocks' performance on a specific day, including today.",
+        "gold_answer": "here are 3 stocks that increased in value today. knsl, ttd, and coin",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0487,
+          0.0487,
+          0.0474
+        ]
+      },
+      {
+        "query": "who was the coach for the seattle seahawks?",
+        "predicted": "The current head coach of the Seattle Seahawks is Mike Macdonald.",
+        "gold_answer": "mike macdonald",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0653,
+          0.0648,
+          0.0635
+        ]
+      },
+      {
+        "query": "can you tell me the date that randall wallace was born?",
+        "predicted": "Randall Wallace was born on July 28, 1949.",
+        "gold_answer": "1949-07-28",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0656,
+          0.0645,
+          0.0635
+        ]
+      },
+      {
+        "query": "which team did rayo vallecano play against last week?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "betis",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.065,
+          0.0645,
+          0.064
+        ]
+      },
+      {
+        "query": "how many english titles have manchester city won?",
+        "predicted": "Manchester City have won nine English top-flight titles.",
+        "gold_answer": "manchester city have won nine english football titles.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0645,
+          0.0645,
+          0.0643
+        ]
+      },
+      {
+        "query": "which player has the most career hat tricks in the nhl among players who have never won the hart trophy?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "mike bossy has the most career hat tricks in the nhl among players who have never won the hart trophy, with 39 hat tricks.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0653,
+          0.0648,
+          0.0635
+        ]
+      },
+      {
+        "query": "who has won the f1 drivers' championship at least five times?",
+        "predicted": "Based on the provided context, the following drivers have won the F1 Drivers' Championship at least five times:\n\n1. Michael Schumacher (7 titles) - won 5 titles with Ferrari and 2 with Benetton.\n2. Lewis Hamilton (7 titles) - won 6 titles with Mercedes and 1 with McLaren.\n3. Juan Manuel Fangio (5 titles) - not mentioned in the provided context, but he is a well-known F1 driver who won 5 titles.\n4. Sebastian Vettel (4 titles) - not mentioned in the provided context, but he is a well-known F1 driver who won 4 titles.\n5. Alain Prost (4 titles) - not mentioned in the provided context, but he is a well-known F1 driver who won 4 titles.\n6. Ayrton Senna (3 titles) - not mentioned in the provided context, but he is a well-known F1 driver who won 3 titles.\n7. Niki Lauda (3 titles) - not mentioned in the provided context, but he is a well-known F1 driver who won 3 titles.\n\nHowever, based on the provided context, the following drivers have won the F1 Drivers' Championship at least five times:\n\n1. Michael Schumacher (7 titles)\n2. Lewis Hamilton (7 titles)\n3. Juan Manuel Fangio (5 titles)",
+        "gold_answer": "michael schumacher, lewis hamilton, and juan manuel fangio have all won the f1 drivers' championship at least five times.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0651,
+          0.0648,
+          0.0635
+        ]
+      },
+      {
+        "query": "what were tesla's quarerly reported earnings per share for the fiscal year 2022?",
+        "predicted": "I do not know based on the context. The provided sources do not contain information about Tesla's quarterly reported earnings per share for the fiscal year 2022.",
+        "gold_answer": "q1: $0.95, q2: $0.76, q3: $0.95, q4: $1.19",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0656,
+          0.0645,
+          0.0635
+        ]
+      },
+      {
+        "query": "which movie was created first, a walk to remember or the notebook?",
+        "predicted": "The novel \"A Walk to Remember\" was published in October 1999, and the film adaptation was released in January 2002. \n\nThe novel \"The Notebook\" was published in 1996, and the film adaptation was released in 2004. \n\nTherefore, \"The Notebook\" was created first, both as a novel and a film.",
+        "gold_answer": "a walk to remember was released first in january 25 2002 while the notebook was released june 25, 2004",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0653,
+          0.0635,
+          0.0635
+        ]
+      },
+      {
+        "query": "longest known length of a tiger shark in meters.",
+        "predicted": "According to Source [3], the longest known length of a tiger shark is over 5 meters (16 ft 5 in).",
+        "gold_answer": "7.5 meters",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0656,
+          0.0645,
+          0.0635
+        ]
+      },
+      {
+        "query": "what car did roman pearce drive in the second fast and furious movie?",
+        "predicted": "According to Source [2], Roman Pearce drove a classic Chevrolet Camaro in the second Fast and Furious movie, \"2 Fast 2 Furious\".",
+        "gold_answer": "tyrese gibson as roman pearce: brian's childhood friend who is on house arrest after serving time in prison, for which he still blames brian. he drives a 2003 mitsubishi eclipse spyder gts.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0656,
+          0.0643,
+          0.0637
+        ]
+      },
+      {
+        "query": "who directed bridget jones: the edge of reason, can you tell me?",
+        "predicted": "Beeban Kidron directed Bridget Jones: The Edge of Reason.",
+        "gold_answer": "beeban kidron",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0656,
+          0.0645,
+          0.0466
+        ]
+      },
+      {
+        "query": "what school won the women's gymnastics ncaa championship in 2022?",
+        "predicted": "Oklahoma won the 2022 NCAA women's gymnastics championship, which was their fifth team title.",
+        "gold_answer": "oklahoma",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0656,
+          0.0645,
+          0.0635
+        ]
+      },
+      {
+        "query": "can you tell me what the lodger title was originally?",
+        "predicted": "I do not know based on the provided context.",
+        "gold_answer": "the lodger",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0492,
+          0.0484,
+          0.0315
+        ]
+      },
+      {
+        "query": "which wta player had a higher singles ranking to end last year, madison keys or daria kasatkina?",
+        "predicted": "Based on the provided context, Daria Kasatkina ended last year (2022) ranked No. 10 in the world, while Madison Keys' ranking for the end of 2022 is not mentioned. However, in 2023, Madison Keys was ranked No. 25.",
+        "gold_answer": "madison keys",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0653,
+          0.0648,
+          0.0635
+        ]
+      },
+      {
+        "query": "how many family movies were there that came out in 1994?",
+        "predicted": "I do not know based on the provided context.",
+        "gold_answer": "109",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.0487,
+          0.0469,
+          0.0469
+        ]
+      }
+    ],
+    "HyDE": [
+      {
+        "query": "how many 3-point attempts did steve nash average per game in seasons he made the 50-40-90 club?",
+        "predicted": "According to the provided context, in the 2005-06 season, Nash shot 43.9% from three-point range. However, it does not provide the exact number of three-point attempts per game. \n\nBut in the 2007-08, 2008-09, and 2009-10 campaigns, Nash repeated the feat of making the 50-40-90 club. Unfortunately, the provided context does not contain enough information to determine the exact number of three-point attempts per game in those seasons.\n\nHowever, we can find the information in source [4] (https://www.nba.com/stats/player/959/career). According to the data, in the 2007-08 season, Nash averaged 3.5 three-point attempts per game. In the 2008-09 season, he averaged 3.3 three-point attempts per game. In the 2009-10 season, he averaged 3.3 three-point attempts per game.\n\nSo, in the seasons he made the 50-40-90 club, Steve Nash averaged approximately 3.3 to 3.5 three-point attempts per game.",
+        "gold_answer": "4 3-points attempts per game",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.8252,
+          0.7289,
+          0.7029
+        ]
+      },
+      {
+        "query": "what is a movie to feature a person who can create and control a device that can manipulate the laws of physics?",
+        "predicted": "I do not know based on the provided context.",
+        "gold_answer": "a movie that features a person who can create and control a device that can manipulate the laws of physics was \"the core\" in 2003, which starred aaron eckhart as a scientist who invents a device that can manipulate the laws of physics, allowing him to control gravity, time, and matter, and he must use this technology to save the earth from destruction after the planet's core suddenly stops rotating.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.4017,
+          0.3796,
+          0.3742
+        ]
+      },
+      {
+        "query": "where did the ceo of salesforce previously work?",
+        "predicted": "According to the context, the CEO of Salesforce, Marc Benioff, previously worked at Oracle as a former executive.",
+        "gold_answer": "marc benioff spent 13 years at oracle, before launching salesforce.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6205,
+          0.4489,
+          0.4255
+        ]
+      },
+      {
+        "query": "which movie won the oscar best visual effects in 2021?",
+        "predicted": "I do not know based on the provided context.",
+        "gold_answer": "tenet",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7601,
+          0.7205,
+          0.7021
+        ]
+      },
+      {
+        "query": "what company in the dow jones is the best performer today?",
+        "predicted": "I do not know based on the provided context. The context only contains information about Microsoft's stock performance and market capitalization, but does not provide any information about the Dow Jones or the performance of its constituent companies.",
+        "gold_answer": "salesforce",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7844,
+          0.7677,
+          0.7466
+        ]
+      },
+      {
+        "query": "in 2004, which animated film was recognized with the best animated feature film oscar?",
+        "predicted": "The Incredibles.",
+        "gold_answer": "finding nemo",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6307,
+          0.6236,
+          0.6233
+        ]
+      },
+      {
+        "query": "on which date did sgml distribute dividends the first time",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "none of the days",
+        "alt_ans": [
+          "invalid question"
+        ],
+        "retrieval_scores": [
+          0.6746,
+          0.579,
+          0.5677
+        ]
+      },
+      {
+        "query": "what is the average gross for the top 3 pixar movies?",
+        "predicted": "To find the average gross for the top 3 Pixar movies, we need to identify the top 3 highest-grossing Pixar movies. \n\nAccording to the provided context, the top 3 highest-grossing Pixar movies are:\n\n1. Toy Story 4 - $1.07 billion\n2. (We need to find the second and third highest-grossing Pixar movies from the provided context.)\n\nFrom the provided context, we can see that Toy Story 4 is the highest-grossing Pixar movie. However, we need to find the second and third highest-grossing Pixar movies.\n\nUnfortunately, the provided context does not explicitly mention the second and third highest-grossing Pixar movies. However, we can infer that the second highest-grossing Pixar movie is likely to be Toy Story 3, which is not mentioned in the provided context, but it is widely known that Toy Story 3 is the second highest-grossing Pixar movie.\n\nThe third highest-grossing Pixar movie is likely to be Incredibles 2, which is not mentioned in the provided context, but it is widely known that Incredibles 2 is the third highest-grossing Pixar movie.\n\nHowever, based on the provided context, we can see that Toy Story 3 and Incredibles 2 are not mentioned, but we can see that Toy Story 3 and Incredibles 2 are widely known to be the second and third highest-grossing Pixar movies.\n\nSo, let's assume that the second and third highest-grossing Pixar movies are Toy Story 3 and Incredibles 2.\n\nNow, let's calculate the average gross for the top 3 Pixar movies:\n\n1. Toy Story 4 - $1.07 billion\n2. Toy Story 3 - $1.07 billion (Note: This is an assumption, as the actual gross for Toy Story 3 is not mentioned in the provided context.)\n3. Incredibles 2 - $1.24 billion (Note: This is an assumption, as the actual gross for Incredibles 2 is not mentioned in the provided context.)\n\nHowever, based on the provided context, we can see that the actual gross for Toy Story 3 and Incredibles 2 is not mentioned. But we can see that Toy Story 4 is the highest-grossing Pixar movie, and we can infer that the second and third highest-grossing Pixar movies are likely to be Toy Story",
+        "gold_answer": "~$509,638,437",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7574,
+          0.7434,
+          0.7044
+        ]
+      },
+      {
+        "query": "what are the countries that are located in southern africa.",
+        "predicted": "The countries located in Southern Africa are Angola, Botswana, Lesotho, Mozambique, Namibia, South Africa, Swaziland, Zambia, and Zimbabwe.",
+        "gold_answer": "angola, botswana, the comoros, eswatini, lesotho, madagascar, malawi, mauritius, mozambique, namibia, south africa, zambia, and zimbabwe.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.642,
+          0.6225,
+          0.5403
+        ]
+      },
+      {
+        "query": "which company in the s&p 500 index has the highest percentage of green energy usage?",
+        "predicted": "I do not know based on the provided context.",
+        "gold_answer": "the company with the highest percentage of renewable energy usage in the s&p 500 index is the estee lauder companies inc., with over 139% of its total power usage coming from green energy.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6505,
+          0.5581,
+          0.5169
+        ]
+      },
+      {
+        "query": "what's the cooling source of the koeberg nuclear power station?",
+        "predicted": "The Koeberg nuclear power station uses seawater for cooling, which is sourced from the South Atlantic Benguela Current.",
+        "gold_answer": "atlantic ocean",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.8051,
+          0.6506,
+          0.5404
+        ]
+      },
+      {
+        "query": "when did hamburg become the biggest city of germany?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "invalid question",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.686,
+          0.6629,
+          0.6187
+        ]
+      },
+      {
+        "query": "how much did voyager therapeutics's stock rise in value over the past month?",
+        "predicted": "I do not know based on the context. The provided sources do not contain information about the stock's value over the past month.",
+        "gold_answer": "-$3.26",
+        "alt_ans": [
+          "invalid question"
+        ],
+        "retrieval_scores": [
+          0.8044,
+          0.7815,
+          0.7686
+        ]
+      },
+      {
+        "query": "what was the total value of all corporate bond issuances in 2024 for the first week?",
+        "predicted": "According to Source [2], the total value of high-grade corporate bond issuances for the first week of 2024 was $45.2 billion.",
+        "gold_answer": "the first week of 2024 saw nearly $59 billion in high-grade bond issuance.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7165,
+          0.6727,
+          0.6508
+        ]
+      },
+      {
+        "query": "what is the ex-dividend date of microsoft in the 1st qtr of 2024",
+        "predicted": "Based on the provided context, the ex-dividend date of Microsoft in the 1st quarter of 2024 is May 15, 2024.",
+        "gold_answer": "the ex-dividend date of microsoft in the 1st qtr of 2024 is feb 14, 2024",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.8308,
+          0.7871,
+          0.7101
+        ]
+      },
+      {
+        "query": "which player took home grand slam championship in 2017?",
+        "predicted": "Roger Federer won the men's singles Grand Slam title in 2017 by defeating Rafael Nadal in the final. Serena Williams won the women's singles Grand Slam title in 2017 by defeating her sister Venus Williams in the final.",
+        "gold_answer": "rafael nadal won his 16th grand slam title at the 2017 u.s. open",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7494,
+          0.7344,
+          0.7156
+        ]
+      },
+      {
+        "query": "what is the most active volcano in the philippines?",
+        "predicted": "According to the provided sources, the most active volcano in the Philippines is Mt. Mayon, located in the province of Albay in the Bicol region.",
+        "gold_answer": "mayon volcano",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7506,
+          0.7263,
+          0.7004
+        ]
+      },
+      {
+        "query": "what were 3 of the most watched halloween movies of all time?",
+        "predicted": "Based on the provided context, I do not have enough information to determine the most watched Halloween movies of all time. However, I can suggest some of the most popular Halloween movies mentioned in the sources:\n\n1. \"It's a Great Pumpkin, Charlie Brown\" - a classic animated special.\n2. \"Hocus Pocus\" - a kid-friendly Halloween movie.\n3. \"Halloween\" (1978) - a slasher classic directed by John Carpenter.\n\nPlease note that the popularity of movies can vary over time and across different audiences, so these are just a few examples of popular Halloween movies mentioned in the sources.",
+        "gold_answer": "hocus pocus, halloween (2018), beetlejuice",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6963,
+          0.6538,
+          0.5832
+        ]
+      },
+      {
+        "query": "which player has the most career wins in the nfl among quarterbacks who have never been to a super bowl?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "philip rivers has the most career wins in the nfl among quarterbacks who have never been to a super bowl, with 134 wins.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.762,
+          0.7322,
+          0.7259
+        ]
+      },
+      {
+        "query": "how many number one hit songs does lady gaga have?",
+        "predicted": "According to the provided context, Lady Gaga has achieved 15 number-one songs on the U.S. Billboard Dance Club Songs chart.",
+        "gold_answer": "7",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7214,
+          0.6582,
+          0.64
+        ]
+      },
+      {
+        "query": "who has had more number one hits on the us billboard dance/electronic songs chart, calvin harris or the chainsmokers?",
+        "predicted": "Based on the provided context, Calvin Harris has had 35 number one hits on the US Billboard Dance/Electronic Songs chart, while The Chainsmokers have had 29. Therefore, Calvin Harris has had more number one hits on the US Billboard Dance/Electronic Songs chart.",
+        "gold_answer": "the chainsmokers",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7703,
+          0.7652,
+          0.7643
+        ]
+      },
+      {
+        "query": "from 1990 to 2000, how many songs did keith sweat release?",
+        "predicted": "I do not know based on the context. The provided sources mention Keith Sweat's albums and singles, but they do not provide a comprehensive list of songs released by Keith Sweat from 1990 to 2000.",
+        "gold_answer": "8",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6762,
+          0.6543,
+          0.5803
+        ]
+      },
+      {
+        "query": "how many games did anthony davis miss in the 2021-2022 regular season?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "40",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6179,
+          0.6167,
+          0.5869
+        ]
+      },
+      {
+        "query": "who were the producers of the movie paul blart: mall cop?",
+        "predicted": "The producers of the movie \"Paul Blart: Mall Cop\" were Kevin James, Adam Sandler, Jack Giarraputo, Todd Garner, and Barry Bernardi.",
+        "gold_answer": "adam sandler, jack giarraputo, kevin james, todd garner, barry bernardi",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7463,
+          0.5857,
+          0.5781
+        ]
+      },
+      {
+        "query": "which company's stock has had the lowest trading activity this week, kind or  casi?",
+        "predicted": "Based on the provided context, I do not have enough information to determine which company's stock has had the lowest trading activity this week.",
+        "gold_answer": "casi",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.5702,
+          0.5506,
+          0.5497
+        ]
+      },
+      {
+        "query": "did taylor swifts debut album fearless launched in 2008 in us?",
+        "predicted": "Yes, Taylor Swift's debut album \"Fearless\" was launched in the U.S. on November 11, 2008.",
+        "gold_answer": "invalid question",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.8508,
+          0.8181,
+          0.7977
+        ]
+      },
+      {
+        "query": "which movie won the oscar best visual effects in 2006?",
+        "predicted": "I do not know based on the provided context.",
+        "gold_answer": "king kong",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6147,
+          0.6053,
+          0.6053
+        ]
+      },
+      {
+        "query": "what's the name of nashville's hockey team?",
+        "predicted": "The Nashville Predators.",
+        "gold_answer": "nashville predators",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7132,
+          0.6055,
+          0.5879
+        ]
+      },
+      {
+        "query": "which university has a higher student-to-faculty ratio, harvard or princeton?",
+        "predicted": "According to the provided context, Harvard University has a student-to-faculty ratio of 7:1, while Princeton University has a student-to-faculty ratio of 4:1 (Source [1]) and 5:1 (Source [2]). Therefore, Princeton University has a lower student-to-faculty ratio than Harvard University.",
+        "gold_answer": "harvard university",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.8398,
+          0.7945,
+          0.7869
+        ]
+      },
+      {
+        "query": "who is the person to win best actor award in 1994?",
+        "predicted": "Tom Hanks won the Best Actor award in 1994 for his role in \"Forrest Gump\".",
+        "gold_answer": "tom hanks",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7134,
+          0.7123,
+          0.7067
+        ]
+      },
+      {
+        "query": "how long is the longest river in alabama?",
+        "predicted": "I do not know based on the context. The context only mentions the Alabama River, but it does not provide information about the longest river in Alabama.",
+        "gold_answer": "the longest river that flows through alabama, the tennessee river, is 652 miles long.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.8148,
+          0.6869,
+          0.5767
+        ]
+      },
+      {
+        "query": "did c\u00e1diz emerge victorious in yesterday's game?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "invalid question",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7768,
+          0.7177,
+          0.643
+        ]
+      },
+      {
+        "query": "can you tell me the earnings per share of lgstw?",
+        "predicted": "I do not know based on the context. The context provided does not contain any information about the company \"lgstw\" or its earnings per share.",
+        "gold_answer": "i don't know",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.571,
+          0.5671,
+          0.5504
+        ]
+      },
+      {
+        "query": "what was the closing price of hamilton lane yesterday?",
+        "predicted": "I do not know based on the provided context.",
+        "gold_answer": "$116.95",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.8053,
+          0.6659,
+          0.5569
+        ]
+      },
+      {
+        "query": "what are 3 examples of stocks that increased in value today?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "here are 3 stocks that increased in value today. knsl, ttd, and coin",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.636,
+          0.5726,
+          0.5644
+        ]
+      },
+      {
+        "query": "who was the coach for the seattle seahawks?",
+        "predicted": "Based on the provided context, the current head coach of the Seattle Seahawks is Mike Macdonald, as stated in Source [3] on January 31, 2024.",
+        "gold_answer": "mike macdonald",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.8635,
+          0.7792,
+          0.696
+        ]
+      },
+      {
+        "query": "can you tell me the date that randall wallace was born?",
+        "predicted": "Randall Wallace was born on July 28, 1949.",
+        "gold_answer": "1949-07-28",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6091,
+          0.5848,
+          0.5522
+        ]
+      },
+      {
+        "query": "which team did rayo vallecano play against last week?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "betis",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7421,
+          0.7315,
+          0.6312
+        ]
+      },
+      {
+        "query": "how many english titles have manchester city won?",
+        "predicted": "Manchester City have won nine English top-flight titles.",
+        "gold_answer": "manchester city have won nine english football titles.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7536,
+          0.7375,
+          0.7345
+        ]
+      },
+      {
+        "query": "which player has the most career hat tricks in the nhl among players who have never won the hart trophy?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "mike bossy has the most career hat tricks in the nhl among players who have never won the hart trophy, with 39 hat tricks.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7062,
+          0.5349,
+          0.5245
+        ]
+      },
+      {
+        "query": "who has won the f1 drivers' championship at least five times?",
+        "predicted": "Based on the provided context, the following drivers have won the F1 Drivers' Championship at least five times:\n\n1. Michael Schumacher (7 titles)\n2. Lewis Hamilton (7 titles)\n3. Juan Manuel Fangio (5 titles)\n4. Alain Prost (4 titles) and Jackie Stewart (3 titles) are not included in this list as they have less than 5 titles.\nHowever, the text does not explicitly mention that Jackie Stewart has only 3 titles.",
+        "gold_answer": "michael schumacher, lewis hamilton, and juan manuel fangio have all won the f1 drivers' championship at least five times.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7847,
+          0.7729,
+          0.7639
+        ]
+      },
+      {
+        "query": "what were tesla's quarerly reported earnings per share for the fiscal year 2022?",
+        "predicted": "I do not know based on the context. The provided sources do not contain information about Tesla's quarterly reported earnings per share for the fiscal year 2022.",
+        "gold_answer": "q1: $0.95, q2: $0.76, q3: $0.95, q4: $1.19",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.714,
+          0.7002,
+          0.5857
+        ]
+      },
+      {
+        "query": "which movie was created first, a walk to remember or the notebook?",
+        "predicted": "The Notebook was published in 1996, and A Walk to Remember was published in 1999. Therefore, The Notebook was created first.",
+        "gold_answer": "a walk to remember was released first in january 25 2002 while the notebook was released june 25, 2004",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7315,
+          0.721,
+          0.6877
+        ]
+      },
+      {
+        "query": "longest known length of a tiger shark in meters.",
+        "predicted": "According to Source [2], the longest known length of a tiger shark is over 5 meters (16 ft 5 in).",
+        "gold_answer": "7.5 meters",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7598,
+          0.7385,
+          0.6625
+        ]
+      },
+      {
+        "query": "what car did roman pearce drive in the second fast and furious movie?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "tyrese gibson as roman pearce: brian's childhood friend who is on house arrest after serving time in prison, for which he still blames brian. he drives a 2003 mitsubishi eclipse spyder gts.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.5184,
+          0.5137,
+          0.4744
+        ]
+      },
+      {
+        "query": "who directed bridget jones: the edge of reason, can you tell me?",
+        "predicted": "Beeban Kidron directed Bridget Jones: The Edge of Reason.",
+        "gold_answer": "beeban kidron",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.705,
+          0.6205,
+          0.4937
+        ]
+      },
+      {
+        "query": "what school won the women's gymnastics ncaa championship in 2022?",
+        "predicted": "Oklahoma won the women's gymnastics NCAA championship in 2022.",
+        "gold_answer": "oklahoma",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.8859,
+          0.7509,
+          0.6278
+        ]
+      },
+      {
+        "query": "can you tell me what the lodger title was originally?",
+        "predicted": "The original title of the story \"The Lodger\" by Marie Belloc Lowndes was not mentioned in the provided context. However, the 1913 novel by Marie Belloc Lowndes is mentioned, but the original title of the novel is not specified.",
+        "gold_answer": "the lodger",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6174,
+          0.5079,
+          0.4144
+        ]
+      },
+      {
+        "query": "which wta player had a higher singles ranking to end last year, madison keys or daria kasatkina?",
+        "predicted": "Based on the provided context, Daria Kasatkina ended last year (2022) ranked No. 10 in the world, while Madison Keys' ranking for the end of 2022 is not mentioned. However, in 2023, Madison Keys was ranked No. 25.",
+        "gold_answer": "madison keys",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.801,
+          0.7636,
+          0.7582
+        ]
+      },
+      {
+        "query": "how many family movies were there that came out in 1994?",
+        "predicted": "I do not know based on the context. The provided sources mention several movies released in 1994, but they do not provide a comprehensive list of family movies from that year.",
+        "gold_answer": "109",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.5617,
+          0.5171,
+          0.5105
+        ]
+      }
+    ],
+    "CRAG": [
+      {
+        "query": "how many 3-point attempts did steve nash average per game in seasons he made the 50-40-90 club?",
+        "predicted": "According to the provided context, in the 2005-06 season, Nash shot 43.9% from three-point range. However, it does not provide the exact number of three-point attempts per game for that season.\n\nIn the 2007-08, 2008-09, and 2009-10 seasons, Nash repeated the feat of making the 50-40-90 club, but the context does not provide the exact number of three-point attempts per game for those seasons.\n\nHowever, according to the 2005-06 season, Nash's three-point attempts per game can be calculated from his total three-point attempts and games played. In the 2005-06 season, Nash played 79 games and attempted 213 three-pointers. \n\nTo calculate the average three-point attempts per game, we can divide the total three-point attempts by the number of games played: 213 three-point attempts / 79 games = approximately 2.7 three-point attempts per game.\n\nSo, in the 2005-06 season, Steve Nash averaged approximately 2.7 three-point attempts per game.\n\nReferences:\n[1] Steve Nash - Wikipedia, Available: https://en.wikipedia.org/wiki/Steve_Nash\n[2] Steve Nash | Biography, Coach, & Facts | Britannica, Available: https://www.britannica.com/biography/Steve-Nash\n[3] Steve Nash Stats, Height, Weight, Position, Draft Status and more ..., Available: https://www.basketball-reference.com/players/n/nashst01.html\n[4] List of NBA annual scoring leaders - Wikipedia, Available: https://en.wikipedia.org/wiki/List_of_National_Basketball_Association_annual_scoring_leaders\n[5] Hakeem Olajuwon Stats, Height, Weight, Position, Draft Status and ..., Available: https://www.basketball-reference.com/players/o/olajuha01.html\n",
+        "gold_answer": "4 3-points attempts per game",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6588,
+          0.5927,
+          0.5764
+        ]
+      },
+      {
+        "query": "what is a movie to feature a person who can create and control a device that can manipulate the laws of physics?",
+        "predicted": "I do not know based on the context.\n\nReferences:\n[1] Physics Manipulation | Superpower Wiki | Fandom, Available: https://powerlisting.fandom.com/wiki/Physics_Manipulation\n[2] Movies that feature physics concepts, Available: https://www.physicsforums.com/threads/movies-that-feature-physics-concepts.998492/\n[3] 10 action sequences that defy the laws of physics | Den of Geek, Available: https://www.denofgeek.com/movies/10-action-sequences-that-defy-the-laws-of-physics/\n[4] Insultingly Stupid Movie Physics: Hollywood's Best Mistakes, Goofs ..., Available: https://www.amazon.com/Insultingly-Stupid-Movie-Physics-Destructions-ebook/dp/B003PJ7A0G\n[5] How Transformers Built a $14 Billion Empire For Hasbro - Bloomberg, Available: https://www.bloomberg.com/news/articles/2018-12-20/hasbro-reboots-transformers-for-gen-x-dads-and-their-daughters\n",
+        "gold_answer": "a movie that features a person who can create and control a device that can manipulate the laws of physics was \"the core\" in 2003, which starred aaron eckhart as a scientist who invents a device that can manipulate the laws of physics, allowing him to control gravity, time, and matter, and he must use this technology to save the earth from destruction after the planet's core suddenly stops rotating.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.4955,
+          0.4242,
+          0.4052
+        ]
+      },
+      {
+        "query": "where did the ceo of salesforce previously work?",
+        "predicted": "According to the context, Marc Benioff, the CEO of Salesforce, previously worked at Oracle as a former executive.\n\nReferences:\n[1] Salesforce - Wikipedia, Available: https://en.wikipedia.org/wiki/Salesforce\n[2] Marc Benioff - Wikipedia, Available: https://en.wikipedia.org/wiki/Marc_Benioff\n[3] The History of Salesforce - Salesforce, Available: https://www.salesforce.com/news/stories/the-history-of-salesforce/\n[4] Anthropic CEO and Key Executive Team | Craft.co, Available: https://craft.co/anthropic/executives\n[5] Tim Cook took the helm at Apple over 10 years ago. Here's how he ..., Available: https://www.businessinsider.com/the-rise-of-apple-ceo-tim-cook-2016-1\n",
+        "gold_answer": "marc benioff spent 13 years at oracle, before launching salesforce.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.5441,
+          0.538,
+          0.5037
+        ]
+      },
+      {
+        "query": "which movie won the oscar best visual effects in 2021?",
+        "predicted": "I do not know based on the context.\n\nReferences:\n[1] Timeline of VFX Oscar Winners | Foundry, Available: https://www.foundry.com/insights/film-tv/decade-of-vfx-winners\n[2] Oscars 2019 \u2014 Best Achievement in Visual Effects - IMDb, Available: https://www.imdb.com/list/ls041854159/\n[3] Best Visual Effects | Oscars Wiki | Fandom, Available: https://oscars.fandom.com/wiki/Best_Visual_Effects\n[4] Academy Award for Best Visual Effects \u2014 The Complete List, Available: https://www.studiobinder.com/blog/academy-award-for-best-visual-effects/\n[5] Best Visual Effects category Oscar winners of the last 10 years, Available: https://parametric-architecture.com/best-visual-effects-category-oscar-winners-of-the-last-10-years/\n",
+        "gold_answer": "tenet",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7407,
+          0.7103,
+          0.6932
+        ]
+      },
+      {
+        "query": "what company in the dow jones is the best performer today?",
+        "predicted": "I do not know based on the context. The information provided only mentions the best performer for the month, not for the day.",
+        "gold_answer": "salesforce",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6898,
+          0.6715,
+          0.6467
+        ]
+      },
+      {
+        "query": "in 2004, which animated film was recognized with the best animated feature film oscar?",
+        "predicted": "The film \"The Incredibles\" was recognized with the Best Animated Feature Film Oscar in 2004.\n\nReferences:\n[1] Oscar Winning and Nominated Animated Feature Films - IMDb, Available: https://www.imdb.com/list/ls076720883/\n[2] Best Animated Feature | Oscars Wiki | Fandom, Available: https://oscars.fandom.com/wiki/Best_Animated_Feature\n[3] Best Animated Feature | Oscars Wiki | Fandom, Available: https://oscars.fandom.com/wiki/Best_Animated_Feature\n[4] Best Animated Feature | Oscars Wiki | Fandom, Available: https://oscars.fandom.com/wiki/Best_Animated_Feature\n[5] Best Animated Feature | Oscars Wiki | Fandom, Available: https://oscars.fandom.com/wiki/Best_Animated_Feature\n",
+        "gold_answer": "finding nemo",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.8108,
+          0.7795,
+          0.7774
+        ]
+      },
+      {
+        "query": "on which date did sgml distribute dividends the first time",
+        "predicted": "I do not know based on the context. The context mentions that dividend history information is presently unavailable for Sigma Lithium Corporation Common Shares (SGML).",
+        "gold_answer": "none of the days",
+        "alt_ans": [
+          "invalid question"
+        ],
+        "retrieval_scores": [
+          0.6128,
+          0.5955,
+          0.5361
+        ]
+      },
+      {
+        "query": "what is the average gross for the top 3 pixar movies?",
+        "predicted": "Based on the provided context, the top 3 Pixar movies are Toy Story 4, Incredibles 2, and Toy Story 3. \n\nAccording to the context, Toy Story 4 earned $1.07 billion, Incredibles 2 earned $1.242 billion, and Toy Story 3 earned $1 billion. \n\nTo calculate the average, we need to add these numbers and divide by 3. \n\n$1.07 billion + $1.242 billion + $1 billion = $3.312 billion \n\n$3.312 billion / 3 = $1.104 billion \n\nSo, the average gross for the top 3 Pixar movies is approximately $1.104 billion.\n\nReferences:\n[1] The 10 Highest-Grossing Pixar Movies of All Time, Available: https://movieweb.com/highest-grossing-pixar-movies/\n[2] List of highest-grossing animated films - Wikipedia, Available: https://en.wikipedia.org/wiki/List_of_highest-grossing_animated_films\n[3] DreamWorks vs. Pixar Box Office: Which Rival Animation Studio Won ..., Available: https://screenrant.com/dreamworks-pixar-box-office-comparison/\n[4] The Highest-Grossing Pixar Movies Of All Time, Available: https://screenrant.com/pixar-the-highest-grossing-films-of-all-time-disney/\n[5] List of highest-grossing films - Wikipedia, Available: https://en.wikipedia.org/wiki/List_of_highest-grossing_films\n",
+        "gold_answer": "~$509,638,437",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6535,
+          0.6529,
+          0.6496
+        ]
+      },
+      {
+        "query": "what are the countries that are located in southern africa.",
+        "predicted": "The countries located in Southern Africa are Angola, Botswana, Lesotho, Mozambique, Namibia, South Africa, Swaziland, Zambia, and Zimbabwe.\n\nReferences:\n[1] South African Countries - African Studies and African Country ..., Available: https://pitt.libguides.com/c.php?g=12378&p=65817\n[2] 7.6 Southern Africa \u2013 World Regional Geography, Available: https://open.lib.umn.edu/worldgeography/chapter/7-6-southern-africa/\n[3] South Africa | Commonwealth, Available: https://thecommonwealth.org/our-member-countries/south-africa\n[4] Continent | National Geographic Society, Available: https://www.nationalgeographic.org/encyclopedia/Continent/\n[5] List of continents and continental subregions by population - ..., Available: https://en.wikipedia.org/wiki/List_of_continents_and_continental_subregions_by_population\n",
+        "gold_answer": "angola, botswana, the comoros, eswatini, lesotho, madagascar, malawi, mauritius, mozambique, namibia, south africa, zambia, and zimbabwe.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7396,
+          0.6874,
+          0.576
+        ]
+      },
+      {
+        "query": "which company in the s&p 500 index has the highest percentage of green energy usage?",
+        "predicted": "I do not know based on the context. The provided context does not contain information about companies in the S&P 500 index and their green energy usage.",
+        "gold_answer": "the company with the highest percentage of renewable energy usage in the s&p 500 index is the estee lauder companies inc., with over 139% of its total power usage coming from green energy.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.638,
+          0.5978,
+          0.5559
+        ]
+      },
+      {
+        "query": "what's the cooling source of the koeberg nuclear power station?",
+        "predicted": "The Koeberg nuclear power station uses seawater for cooling, which is sourced from the South Atlantic Benguela Current.\n\nReferences:\n[1] Koeberg Nuclear Power Station Refurbishment - NS Energy, Available: https://www.nsenergybusiness.com/projects/koeberg-nuclear-power-station-refurbishment/\n[2] Nuclear Power Plants - Koeberg, South Africa, Available: http://www.nucleartourist.com/world/koeberg.htm\n[3] Cooling pond - Wikipedia, Available: https://en.wikipedia.org/wiki/Cooling_pond\n[4] Power Plant \u0421ooling Towers - Chernobyl 35 years later - chernobyl.one, Available: https://www.chernobyl.one/power-plant-cooling-towers/\n[5] EXPLAINER: What's behind latest scare at Chernobyl plant? | AP News, Available: https://apnews.com/article/russia-ukraine-science-business-nuclear-power-physics-4ef041a54e2d9293ec72c58d20e44225\n",
+        "gold_answer": "atlantic ocean",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7012,
+          0.5625,
+          0.5435
+        ]
+      },
+      {
+        "query": "when did hamburg become the biggest city of germany?",
+        "predicted": "I do not know based on the context. The context mentions that Hamburg developed into one of the largest cities of the Holy Roman Empire, but it does not provide a specific date or time when it became the biggest city of Germany.",
+        "gold_answer": "invalid question",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6661,
+          0.622,
+          0.6176
+        ]
+      },
+      {
+        "query": "how much did voyager therapeutics's stock rise in value over the past month?",
+        "predicted": "I do not know based on the context. The provided context does not contain information about Voyager Therapeutics' stock price movement over the past month.",
+        "gold_answer": "-$3.26",
+        "alt_ans": [
+          "invalid question"
+        ],
+        "retrieval_scores": [
+          0.7319,
+          0.7262,
+          0.7163
+        ]
+      },
+      {
+        "query": "what was the total value of all corporate bond issuances in 2024 for the first week?",
+        "predicted": "I do not know based on the context. The provided context does not contain any information about corporate bond issuances in 2024.",
+        "gold_answer": "the first week of 2024 saw nearly $59 billion in high-grade bond issuance.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6212,
+          0.5791,
+          0.5439
+        ]
+      },
+      {
+        "query": "what is the ex-dividend date of microsoft in the 1st qtr of 2024",
+        "predicted": "Based on the provided context, the ex-dividend date of Microsoft in the 1st quarter of 2024 is not mentioned in the first two sources. However, in source [2], it is mentioned that Microsoft's upcoming ex-dividend date is on May 15, 2024, which is in the 2nd quarter of 2024. \n\nHowever, in source [5], it is mentioned that the Dividend History page provides a single page to review all of the aggregated Dividend payment information, and our partner, Quotemedia, provides the upcoming ex-dividend dates for the next month. Unfortunately, the information for the 1st quarter of 2024 is not available in the provided context.\n\nHowever, in source [1], it is mentioned that the last Microsoft Corporation (MSFT) ex-dividend date was on February 14, 2024.\n\nReferences:\n[1] Microsoft Corporation (MSFT) Dividend Date & History | Koyfin, Available: https://www.koyfin.com/company/msft/dividends/\n[2] Microsoft (MSFT) Stock Dividend Date & History - TipRanks.com, Available: https://www.tipranks.com/stocks/msft/dividends\n[3] Microsoft Investor Relations - Dividends and Stock History, Available: https://www.microsoft.com/en-us/Investor/dividends-and-stock-history.aspx\n[4] Apple (AAPL) Stock Dividend Date & History - TipRanks.com, Available: https://www.tipranks.com/stocks/aapl/dividends\n[5] Microsoft Corporation (MSFT) Dividend History | Nasdaq, Available: https://www.nasdaq.com/market-activity/stocks/msft/dividend-history\n",
+        "gold_answer": "the ex-dividend date of microsoft in the 1st qtr of 2024 is feb 14, 2024",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.787,
+          0.7125,
+          0.6499
+        ]
+      },
+      {
+        "query": "which player took home grand slam championship in 2017?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "rafael nadal won his 16th grand slam title at the 2017 u.s. open",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6235,
+          0.6187,
+          0.5688
+        ]
+      },
+      {
+        "query": "what is the most active volcano in the philippines?",
+        "predicted": "According to the provided context, the most active volcano in the Philippines is Mt. Mayon, located in the province of Albay in the Bicol region.\n\nReferences:\n[1] What are the Most Active Volcanoes in the Philippines?, Available: https://www.philippinetraveler.com/active-volcanoes-in-the-philippines/\n[2] Volcanoes of Luzon, Philippines: facts & information / Volcano..., Available: https://www.volcanodiscovery.com/philippines/luzon.html\n[3] Active volcanoes and eruptions in the Philippines, Available: https://www.worlddata.info/asia/philippines/volcanoes.php\n[4] Volcanoes of the Philippines, Available: https://www.phivolcs.dost.gov.ph/index.php/volcano-hazard/volcanoes-of-the-philippines\n[5] How Many Islands In the Philippines? Everything You Need to Know., Available: https://www.travel-tramp.com/how-many-islands-in-the-philippines/\n",
+        "gold_answer": "mayon volcano",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.75,
+          0.7152,
+          0.6978
+        ]
+      },
+      {
+        "query": "what were 3 of the most watched halloween movies of all time?",
+        "predicted": "I do not know based on the context. The provided text does not mention the most watched Halloween movies of all time, but rather lists some classic and popular Halloween movies.",
+        "gold_answer": "hocus pocus, halloween (2018), beetlejuice",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6031,
+          0.5454,
+          0.5329
+        ]
+      },
+      {
+        "query": "which player has the most career wins in the nfl among quarterbacks who have never been to a super bowl?",
+        "predicted": "I do not know based on the context. The provided context only lists Super Bowl-winning quarterbacks, not those who have never been to a Super Bowl.",
+        "gold_answer": "philip rivers has the most career wins in the nfl among quarterbacks who have never been to a super bowl, with 134 wins.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7332,
+          0.7269,
+          0.7203
+        ]
+      },
+      {
+        "query": "how many number one hit songs does lady gaga have?",
+        "predicted": "Lady Gaga has 15 number-one songs on the U.S. Billboard Dance Club Songs chart, and she also has several number-one hits on the Billboard Hot 100 chart, including her collaborations with other artists.\n\nReferences:\n[1] Artists with the most number-ones on the U.S. Dance Club Songs ..., Available: https://en.wikipedia.org/wiki/Artists_with_the_most_number-ones_on_the_U.S._Dance_Club_Songs_chart\n[2] The Ultimate Ranking of Lady Gaga's 15 Biggest Hit Singles - E! Online, Available: https://www.eonline.com/news/1155200/the-ultimate-ranking-of-lady-gaga-s-15-biggest-hit-singles\n[3] Ariana Grande discography - Wikipedia, Available: https://en.wikipedia.org/wiki/Ariana_Grande_discography\n[4] LADY GAGA songs and albums | full Official Chart history, Available: https://www.officialcharts.com/artist/5334/lady-gaga/\n[5] 10 Artists With The Most No.1 Hits On The Billboard Hot 100 Chart, Available: https://www.thethings.com/artists-with-the-most-no-1-hits-on-the-billboard-hot-100-chart/\n",
+        "gold_answer": "7",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.671,
+          0.6242,
+          0.5817
+        ]
+      },
+      {
+        "query": "who has had more number one hits on the us billboard dance/electronic songs chart, calvin harris or the chainsmokers?",
+        "predicted": "Based on the provided context, Calvin Harris has had 13 top 10s on the Hot Dance/Electronic Songs chart, but it does not specify the number of number one hits. However, it is mentioned that The Chainsmokers have had 6 total Hot Dance/Electronic Songs No. 1s.\n\nReferences:\n[1] The Chainsmokers, Marshmello & Calvin Harris Score: The Year in ..., Available: https://www.billboard.com/pro/the-year-in-dance-electronic-charts-chainsmokers-marshmello-calvin-harris/\n[2] The Chainsmokers Earn 20th Top 10 on Hot Dance/Electronic Songs ..., Available: https://www.billboard.com/pro/chainsmokers-ipad-hot-dance-electronic-songs-chart/\n[3] The Year in Dance/Electronic Charts: The Chainsmokers, Marshmello ..., Available: https://www.billboard.com/pro/the-year-in-dance-electronic-charts-the-chainsmokers/\n[4] Calvin Harris 'Feels' His Way to Hot Dance/Electronic Songs' Top 10, Available: https://www.billboard.com/pro/calvin-harris-feels-hot-dance-electronic-songs-top-10/\n[5] The Chainsmokers, Major Lazer, Calvin Harris & More Top ..., Available: https://www.billboard.com/pro/the-chainsmokers-major-lazer-dance-electronic-charts-billboard-2016/\n",
+        "gold_answer": "the chainsmokers",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.686,
+          0.6414,
+          0.6322
+        ]
+      },
+      {
+        "query": "from 1990 to 2000, how many songs did keith sweat release?",
+        "predicted": "I do not know based on the context. The provided sources mention Keith Sweat's albums and singles, but they do not provide a comprehensive list of all the songs he released from 1990 to 2000.\n\nReferences:\n[1] Keith Sweat (album) - Wikipedia, Available: https://en.wikipedia.org/wiki/Keith_Sweat_(album)\n[2] Keith Sweat | Encyclopedia.com, Available: https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/keith-sweat\n[3] Keith Sweat - Wikipedia, Available: https://en.wikipedia.org/wiki/Keith_Sweat\n[4] 10 Best Tim McGraw Songs - Country Now, Available: https://countrynow.com/10-best-tim-mcgraw-songs/\n[5] Amazon.com: Dream Walkin': CDs & Vinyl, Available: https://www.amazon.com/Dream-Walkin-Toby-Keith/dp/B000001EUV\n",
+        "gold_answer": "8",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7042,
+          0.6634,
+          0.5896
+        ]
+      },
+      {
+        "query": "how many games did anthony davis miss in the 2021-2022 regular season?",
+        "predicted": "I do not know based on the context. The provided context does not mention Anthony Davis's missed games in the 2021-2022 regular season.",
+        "gold_answer": "40",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.535,
+          0.5045,
+          0.493
+        ]
+      },
+      {
+        "query": "who were the producers of the movie paul blart: mall cop?",
+        "predicted": "The producers of the movie \"Paul Blart: Mall Cop\" were Kevin James, Adam Sandler, Jack Giarraputo, Todd Garner, and Barry Bernardi.\n\nReferences:\n[1] Paul Blart: Mall Cop - Wikipedia, Available: https://en.wikipedia.org/wiki/Paul_Blart:_Mall_Cop\n[2] Paul Blart: Mall Cop 2 (2015) \u2b50 4.4 | Action, Comedy, Crime, Available: https://www.imdb.com/title/tt3450650/\n[3] Paul Blart: Mall Cop (2009) \u2b50 5.3 | Action, Comedy, Crime, Available: https://www.imdb.com/title/tt1114740/\n[4] Paul Walker | The Fast and the Furious Wiki | Fandom, Available: https://fastandfurious.fandom.com/wiki/Paul_Walker\n[5] Frat Pack - Wikipedia, Available: https://en.wikipedia.org/wiki/Frat_Pack\n",
+        "gold_answer": "adam sandler, jack giarraputo, kevin james, todd garner, barry bernardi",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.774,
+          0.6774,
+          0.628
+        ]
+      },
+      {
+        "query": "which company's stock has had the lowest trading activity this week, kind or  casi?",
+        "predicted": "I do not know based on the context. The provided context only mentions the performance of Coca-Cola Europacific Partners plc (CCEP) and does not provide information about other companies' stock activity.",
+        "gold_answer": "casi",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.5615,
+          0.5528,
+          0.5477
+        ]
+      },
+      {
+        "query": "did taylor swifts debut album fearless launched in 2008 in us?",
+        "predicted": "No, Taylor Swift's debut album was actually \"Taylor Swift\" which was released on October 24, 2006. Fearless was her second studio album, released on November 11, 2008.\n\nReferences:\n[1] Taylor Swift: Fearless Era (2008-2010) | Taylor Swift Switzerland, Available: https://taylorswiftswitzerland.ch/index.php/album-eras/fearless-era/\n[2] Fearless | album by Swift | Britannica, Available: https://www.britannica.com/topic/Fearless-album-by-Swift\n[3] Fearless | Taylor Swift Wiki | Fandom, Available: https://taylorswift.fandom.com/wiki/Fearless\n[4] Fearless (Taylor Swift album) - Wikipedia, Available: https://en.wikipedia.org/wiki/Fearless_(Taylor_Swift_album)\n[5] Taylor Swift (album) | Taylor Swift Wiki | Fandom, Available: https://taylorswift.fandom.com/wiki/Taylor_Swift_(album)\n",
+        "gold_answer": "invalid question",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7236,
+          0.7182,
+          0.7155
+        ]
+      },
+      {
+        "query": "which movie won the oscar best visual effects in 2006?",
+        "predicted": "I do not know based on the provided context.\n\nReferences:\n[1] Timeline of VFX Oscar Winners | Foundry, Available: https://www.foundry.com/insights/film-tv/decade-of-vfx-winners\n[2] Oscars 2019 \u2014 Best Achievement in Visual Effects - IMDb, Available: https://www.imdb.com/list/ls041854159/\n[3] Academy Award for Best Visual Effects \u2014 The Complete List, Available: https://www.studiobinder.com/blog/academy-award-for-best-visual-effects/\n[4] Best Visual Effects | Oscars Wiki | Fandom, Available: https://oscars.fandom.com/wiki/Best_Visual_Effects\n[5] Oscars 2018: Visual Effects Shortlist Includes Dunkirk, Star Wars, Available: https://collider.com/oscars-2018-visual-effects-vfx-shortlist-the-last-jedi/\n",
+        "gold_answer": "king kong",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7306,
+          0.7131,
+          0.6838
+        ]
+      },
+      {
+        "query": "what's the name of nashville's hockey team?",
+        "predicted": "The Nashville Predators.\n\nReferences:\n[1] Nashville Predators - Wikipedia, Available: https://en.wikipedia.org/wiki/Nashville_Predators\n[2] Nashville Youth Hockey League, Available: https://www.nyhl.com/\n[3] Home Page | Nashville Jr Predators, Available: https://www.jrpredators.com/\n[4] List of all the Montreal Canadiens Season Leaders | Hockey-Ref..., Available: https://www.hockey-reference.com/teams/MTL/leaders_season.html\n[5] List of all the Montreal Canadiens Career Leaders | Hockey-Ref..., Available: https://www.hockey-reference.com/teams/MTL/leaders_career.html\n",
+        "gold_answer": "nashville predators",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6658,
+          0.6363,
+          0.5525
+        ]
+      },
+      {
+        "query": "which university has a higher student-to-faculty ratio, harvard or princeton?",
+        "predicted": "Based on the provided context, Harvard University has a higher student-to-faculty ratio compared to Princeton University. The ratios are as follows: \n\n- Harvard University: 7:1 (Source [1] and Source [3])\n- Princeton University: 4:1 (Source [1])\n\nReferences:\n[1] Princeton vs Harvard: Which One Should You Choose? | IvyWise, Available: https://www.ivywise.com/blog/princeton-vs-harvard-which-one-should-you-choose/\n[2] What Does Student-to-Faculty Ratio Really Mean? | BestColleges, Available: https://www.bestcolleges.com/news/analysis/2021/08/10/solving-the-student-faculty-ratio-mystery/\n[3] What Is A Good Student-to-Faculty Ratio For U.S. Colleges? - Best ..., Available: https://www.bestvalueschools.com/faq/what-is-a-good-student-to-faculty-ratio-for-u-s-colleges/\n[4] Harvard University - Profile, Rankings and Data | US News Best ..., Available: https://www.usnews.com/best-colleges/harvard-university-2155\n[5] Denzel Washington | Fordham, Available: https://www.fordham.edu/about/leadership-and-administration/administrative-offices/office-of-the-president/hall-of-honor/denzel-washington/\n",
+        "gold_answer": "harvard university",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.8148,
+          0.7578,
+          0.7431
+        ]
+      },
+      {
+        "query": "who is the person to win best actor award in 1994?",
+        "predicted": "Tom Hanks won the Best Actor award in 1994 for his role in \"Philadelphia\".\n\nReferences:\n[1] Academy Award for Best Supporting Actor - Wikipedia, Available: https://en.wikipedia.org/wiki/Academy_Award_for_Best_Supporting_Actor\n[2] Academy Award for Best Supporting Actor - Wikipedia, Available: https://en.wikipedia.org/wiki/Academy_Award_for_Best_Supporting_Actor\n[3] Academy Award for Best Actor - Wikipedia, Available: https://en.wikipedia.org/wiki/Academy_Award_for_Best_Actor\n[4] Every Best Actor Oscar Winner in Academy Award History, Available: https://variety.com/gallery/best-actor-oscar-winner-academy-awards-history/\n[5] Academy Award for best actor | Years, Winners, List, & Facts | ..., Available: https://www.britannica.com/art/Academy-Award-for-best-actor\n",
+        "gold_answer": "tom hanks",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6161,
+          0.6027,
+          0.6023
+        ]
+      },
+      {
+        "query": "how long is the longest river in alabama?",
+        "predicted": "I do not know based on the context.\n\nReferences:\n[1] Alabama River | Map, Length, & Facts | Britannica, Available: https://www.britannica.com/place/Alabama-River\n[2] Alabama River | Outdoor Alabama, Available: https://www.outdooralabama.com/rivers-and-mobile-delta/alabama-river\n[3] Rivers of Alabama | Auburn University Water Resources Center, Available: https://aaes.auburn.edu/wrc/education-resources/rivers-of-alabama/\n[4] The Ten Longest Highways in the United States, Available: https://ezfreightfactoring.com/blog/the-ten-longest-highways-in-the-united-states/\n[5] What Is The Longest Road in the United States? - Ask the Rambler ..., Available: https://www.fhwa.dot.gov/infrastructure/longest.cfm\n",
+        "gold_answer": "the longest river that flows through alabama, the tennessee river, is 652 miles long.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6356,
+          0.6045,
+          0.4296
+        ]
+      },
+      {
+        "query": "did c\u00e1diz emerge victorious in yesterday's game?",
+        "predicted": "I do not know based on the context. The context only provides information about the upcoming match between C\u00e1diz and Sevilla, but does not mention the result of any previous game.",
+        "gold_answer": "invalid question",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6602,
+          0.5954,
+          0.5876
+        ]
+      },
+      {
+        "query": "can you tell me the earnings per share of lgstw?",
+        "predicted": "I do not know based on the context. The provided context only mentions Warrior Met Coal, Inc. and does not contain any information about LGSTW.",
+        "gold_answer": "i don't know",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.515,
+          0.5003,
+          0.4975
+        ]
+      },
+      {
+        "query": "what was the closing price of hamilton lane yesterday?",
+        "predicted": "I do not know based on the context. The provided context only contains information about the third quarter 2024 results, but does not mention the closing price of Hamilton Lane stock for the previous day.",
+        "gold_answer": "$116.95",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.5852,
+          0.5771,
+          0.5191
+        ]
+      },
+      {
+        "query": "what are 3 examples of stocks that increased in value today?",
+        "predicted": "I do not know based on the context. The context only mentions the stocks' price changes as a percentage, but it does not provide information on the actual price changes.",
+        "gold_answer": "here are 3 stocks that increased in value today. knsl, ttd, and coin",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.5575,
+          0.5571,
+          0.545
+        ]
+      },
+      {
+        "query": "who was the coach for the seattle seahawks?",
+        "predicted": "The current head coach of the Seattle Seahawks is Mike Macdonald.\n\nReferences:\n[1] Seahawks Coaching Staff | Seattle Seahawks \u2013 seahawks.com, Available: https://www.seahawks.com/team/coaches-roster/\n[2] Pete Carroll - Wikipedia, Available: https://en.wikipedia.org/wiki/Pete_Carroll\n[3] List of Seattle Seahawks head coaches - Wikipedia, Available: https://en.wikipedia.org/wiki/List_of_Seattle_Seahawks_head_coaches\n[4] Pete Carroll: \"We Have To Find Consistency\", Available: https://www.seahawks.com/video/pete-carroll-we-have-to-find-consistency\n[5] Jed York - Wikipedia, Available: https://en.wikipedia.org/wiki/Jed_York\n",
+        "gold_answer": "mike macdonald",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7814,
+          0.6894,
+          0.674
+        ]
+      },
+      {
+        "query": "can you tell me the date that randall wallace was born?",
+        "predicted": "Randall Wallace was born on July 28, 1949.\n\nReferences:\n[1] Randall Wallace \u2013 Age, Bio, Personal Life, Family & Stats - ..., Available: https://www.celebsages.com/randall-wallace/\n[2] Randall Wallace biography and filmography | Randall Wallace movies, Available: https://www.tribute.ca/people/biography/randall-wallace/8457/\n[3] Randall Wallace | Writer, Producer, Director, Available: https://www.imdb.com/name/nm0908824/\n[4] Lakers News: Ex-LA Teammate Reflects On Kobe Bryant's Rookie Season ..., Available: https://www.si.com/nba/lakers/news/ex-la-teammate-reflects-on-kobe-bryants-rookie-season-ak1987\n[5] Kobe Bryant - Wikipedia, Available: https://en.wikipedia.org/wiki/Kobe_Bryant\n",
+        "gold_answer": "1949-07-28",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.553,
+          0.5364,
+          0.4949
+        ]
+      },
+      {
+        "query": "which team did rayo vallecano play against last week?",
+        "predicted": "I do not know based on the context.\n\nReferences:\n[1] Rayo Vallecano 2023-24 Squad - ESPN, Available: https://www.espn.com/soccer/team/squad/_/id/101/rayo-vallecano\n[2] Rayo Vallecano - News, Schedule, Scores, Roster, and Stats - The ..., Available: https://theathletic.com/football/team/rayo-vallecano/\n[3] Rayo Vallecano live scores, results, fixtures, Celta Vigo v Rayo ..., Available: https://www.flashscore.com/team/rayo-vallecano/8bcjFy6O/\n[4] Barcelona - Alav\u00e9s summary: score, goals, highlights, LaLiga 2023-24 ..., Available: https://en.as.com/soccer/barcelona-alaves-live-online-score-stats-and-updates-laliga-2023-24-n/\n[5] Osasuna live score \u2192 Today match results \u2192 Next match fixtures ..., Available: https://livescores.biz/team/osasuna\n",
+        "gold_answer": "betis",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6704,
+          0.6669,
+          0.5598
+        ]
+      },
+      {
+        "query": "how many english titles have manchester city won?",
+        "predicted": "Manchester City have won nine English top-flight titles.\n\nReferences:\n[1] How Many English Premier League Titles Have Manchester City Won?, Available: https://mscfootball.com/2023/05/how-many-english-premier-league-titles-have-manchester-city-won/\n[2] Manchester City football club history, Available: https://www.footballhistory.org/club/manchester-city.html\n[3] Manchester City Honours And History - Manchester City F. C., Available: https://www.mancity.com/club/manchester-city-history\n[4] Manchester City Honours And History - Manchester City F. C., Available: https://www.mancity.com/club/manchester-city-history\n[5] How many trophies have Manchester City won? - AS USA, Available: https://en.as.com/soccer/how-many-trophies-have-manchester-city-won-n/\n",
+        "gold_answer": "manchester city have won nine english football titles.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6921,
+          0.6433,
+          0.6206
+        ]
+      },
+      {
+        "query": "which player has the most career hat tricks in the nhl among players who have never won the hart trophy?",
+        "predicted": "I do not know based on the context.\n\nReferences:\n[1] NHL Hat Tricks History & Fun Facts, Available: https://thehockeywriters.com/nhl-hat-tricks-history-fun-facts/\n[2] Hart Memorial Trophy - Wikipedia, Available: https://en.wikipedia.org/wiki/Hart_Memorial_Trophy\n[3] NHL Hart Memorial Trophy Winners | Hockey-Reference.com, Available: https://www.hockey-reference.com/awards/hart.html\n[4] Vezina Trophy - Wikipedia, Available: https://en.wikipedia.org/wiki/Vezina_Trophy\n[5] Vezina Trophy for Best Goalie, Available: https://www.prostockhockey.com/hockey-resources/nhl-awards-types/vezina-trophy/\n",
+        "gold_answer": "mike bossy has the most career hat tricks in the nhl among players who have never won the hart trophy, with 39 hat tricks.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7179,
+          0.656,
+          0.5113
+        ]
+      },
+      {
+        "query": "who has won the f1 drivers' championship at least five times?",
+        "predicted": "Based on the provided context, the following drivers have won the F1 Drivers' Championship at least five times:\n\n1. Michael Schumacher (7 titles) - won 5 titles with Ferrari and 2 with Benetton.\n2. Lewis Hamilton (7 titles) - won 6 titles with Mercedes and 1 with McLaren.\n3. Juan Manuel Fangio (5 titles) - not mentioned in the provided context, but he is a well-known F1 driver who won 5 titles.\n4. Sebastian Vettel (4 titles) - not mentioned in the provided context, but he is a well-known F1 driver who won 4 titles.\n5. Alain Prost (4 titles) - not mentioned in the provided context, but he is a well-known F1 driver who won 4 titles.\n6. Ayrton Senna (3 titles) - not mentioned in the provided context, but he is a well-known F1 driver who won 3 titles.\n7. Niki Lauda (3 titles) - not mentioned in the provided context, but he is a well-known F1 driver who won 3 titles.\n\nHowever, based on the provided context, the following drivers have won the F1 Drivers' Championship at least five times:\n\n1. Michael Schumacher (7 titles)\n2. Lewis Hamilton (7 titles)\n3. Juan Manuel Fangio (5 titles)\n\nReferences:\n[1] Most F1 Championships - List of F1 Drivers and Teams with most ..., Available: https://www.sportskeeda.com/f1/most-f1-world-titles\n[2] F1 Champions & Formula 1 World Title Winners List by Year, Available: https://www.f1-fansite.com/f1-results/f1-champions/\n[3] Formula 1 records: Most wins, pole positions and world championships, Available: https://motorsporttickets.com/blog/formula-1-records-most-wins-pole-positions-and-world-championships/\n[4] Which F1 driver has the most race starts? Alonso, Hamilton and more, Available: https://www.autosport.com/f1/news/which-f1-driver-has-the-most-race-starts-hamilton-raikkonen-and-more/10338884/\n[5] Formula 1 records: Most wins, pole positions and world championships, Available: https://motorsporttickets.com/blog/formula-1-records-most-wins-pole-positions-and-world-championships/\n",
+        "gold_answer": "michael schumacher, lewis hamilton, and juan manuel fangio have all won the f1 drivers' championship at least five times.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6788,
+          0.6677,
+          0.6289
+        ]
+      },
+      {
+        "query": "what were tesla's quarerly reported earnings per share for the fiscal year 2022?",
+        "predicted": "I do not know based on the context. The provided context only mentions the last quarter's earnings, but it does not specify the fiscal year 2022.",
+        "gold_answer": "q1: $0.95, q2: $0.76, q3: $0.95, q4: $1.19",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7148,
+          0.6459,
+          0.6346
+        ]
+      },
+      {
+        "query": "which movie was created first, a walk to remember or the notebook?",
+        "predicted": "The Notebook was created first. The novel \"The Notebook\" was published in 1996, and the movie was released in 2004. The novel \"A Walk to Remember\" was published in 1999, and the movie was released in 2002.\n\nReferences:\n[1] The Untold Truth Of A Walk To Remember - The List, Available: https://www.thelist.com/233444/the-untold-truth-of-a-walk-to-remember/\n[2] A Walk to Remember (novel) - Wikipedia, Available: https://en.wikipedia.org/wiki/A_Walk_to_Remember_(novel)\n[3] A Walk to Remember - Wikipedia, Available: https://en.wikipedia.org/wiki/A_Walk_to_Remember\n[4] A Walk to Remember movie review (2002) | Roger Ebert, Available: https://www.rogerebert.com/reviews/a-walk-to-remember-2002\n[5] Movie vs Novel | A Walk To Remember Wiki | Fandom, Available: https://awalktoremember.fandom.com/wiki/Movie_vs_Novel\n",
+        "gold_answer": "a walk to remember was released first in january 25 2002 while the notebook was released june 25, 2004",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.62,
+          0.6081,
+          0.5946
+        ]
+      },
+      {
+        "query": "longest known length of a tiger shark in meters.",
+        "predicted": "According to Source [3], the longest known length of a tiger shark is over 5 meters (16 ft 5 in).\n\nReferences:\n[1] Discover the Largest Tiger Shark Ever Recorded! - A-Z Animals, Available: https://a-z-animals.com/blog/discover-the-largest-tiger-shark-ever-recorded/\n[2] Galeocerdo cuvier \u2013 Discover Fishes, Available: https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/galeocerdo-cuvier/\n[3] Tiger shark - Wikipedia, Available: https://en.wikipedia.org/wiki/Tiger_shark\n[4] The Most Endangered Tigers in the World | Reader's Digest, Available: https://www.rd.com/list/endangered-tigers/\n[5] Fastest animals - Wikipedia, Available: https://en.wikipedia.org/wiki/Fastest_animals\n",
+        "gold_answer": "7.5 meters",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7411,
+          0.6547,
+          0.6357
+        ]
+      },
+      {
+        "query": "what car did roman pearce drive in the second fast and furious movie?",
+        "predicted": "According to Source [3], Roman Pearce drove a classic Chevrolet Camaro in the second Fast and Furious movie, \"2 Fast 2 Furious\".\n\nReferences:\n[1] Roman's Entire Fast & Furious Backstory Explained - Looper, Available: https://www.looper.com/403452/romans-entire-fast-furious-backstory-explained/\n[2] Furious 7: Which Brian O'Conner Scenes Weren't Paul Walker, Available: https://screenrant.com/furious-7-brian-scenes-not-paul-walker-brothers/\n[3] Roman Pearce | Heroes Wiki | Fandom, Available: https://hero.fandom.com/wiki/Roman_Pearce\n[4] 10 action sequences that defy the laws of physics | Den of Geek, Available: https://www.denofgeek.com/movies/10-action-sequences-that-defy-the-laws-of-physics/\n[5] Paul Walker | The Fast and the Furious Wiki | Fandom, Available: https://fastandfurious.fandom.com/wiki/Paul_Walker\n",
+        "gold_answer": "tyrese gibson as roman pearce: brian's childhood friend who is on house arrest after serving time in prison, for which he still blames brian. he drives a 2003 mitsubishi eclipse spyder gts.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6652,
+          0.5595,
+          0.5411
+        ]
+      },
+      {
+        "query": "who directed bridget jones: the edge of reason, can you tell me?",
+        "predicted": "Beeban Kidron directed Bridget Jones: The Edge of Reason.\n\nReferences:\n[1] Bridget Jones: The Edge of Reason - Full Cast & Crew - TV Guide, Available: https://www.tvguide.com/movies/bridget-jones-the-edge-of-reason/cast/2000349010/\n[2] Bridget Jones: The Edge of Reason | Bridget Jones' Diary Wiki | Fandom, Available: https://bridgetjonesdiary.fandom.com/wiki/Bridget_Jones:_The_Edge_of_Reason\n[3] List of Kirsten Dunst performances - Wikipedia, Available: https://en.wikipedia.org/wiki/List_of_Kirsten_Dunst_performances\n[4] Nicole Kidman\u2019s 10 Best Movies (According To IMDb), Available: https://screenrant.com/nicole-kidmans-best-movies-imdb-moulin-rouge-dogville-the-hours/\n[5] The 83rd Academy Awards | 2011, Available: https://www.oscars.org/oscars/ceremonies/2011\n",
+        "gold_answer": "beeban kidron",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7126,
+          0.6294,
+          0.4342
+        ]
+      },
+      {
+        "query": "what school won the women's gymnastics ncaa championship in 2022?",
+        "predicted": "Oklahoma won the 2022 NCAA women's gymnastics championship, which was their fifth team title.\n\nReferences:\n[1] 2022 NCAA Women's Gymnastics Championship, Available: https://en.wikipedia.org/wiki/2022_NCAA_Women's_Gymnastics_Championship\n[2] NCAA women's gymnastics teams with the most national championships ..., Available: https://www.ncaa.com/news/gymnastics-women/article/2022-04-16/ncaa-womens-gymnastics-teams-most-national-championships\n[3] 2023 NCAA women's gymnastics championship, Available: https://www.ncaa.com/live-updates/gymnastics-women/nc/live-updates-2023-ncaa-womens-gymnastics-championship\n[4] 2023 NCAA Division I women's basketball tournament - Wikipedia, Available: https://en.wikipedia.org/wiki/2023_NCAA_Division_I_women's_basketball_tournament\n[5] DI Men's Basketball Championship History | NCAA.com, Available: https://www.ncaa.com/history/basketball-men/d1\n",
+        "gold_answer": "oklahoma",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.741,
+          0.6892,
+          0.63
+        ]
+      },
+      {
+        "query": "can you tell me what the lodger title was originally?",
+        "predicted": "I do not know based on the context.\n\nReferences:\n[1] The Lodger (1944 film) - Wikipedia, Available: https://en.wikipedia.org/wiki/The_Lodger_(1944_film)\n[2] The Lodger (1944) \u2b50 7.1 | Crime, Horror, Mystery, Available: https://www.imdb.com/title/tt0037024/\n[3] All The Versions of Nightbreed Explained - Update - www.CliveB..., Available: https://clivebarkercast.com/2020/04/09/all-the-versions-of-nightbreed-explained/\n[4] Clive Barker's Nightbreed Trilogy Plan Explained: Why It Didn't Happen, Available: https://screenrant.com/clive-barker-nightbreed-movie-trilogy-plan-explained-future-details/\n[5] What is the Nine Inch Nails band named after? - Quora, Available: https://www.quora.com/What-is-the-Nine-Inch-Nails-band-named-after\n",
+        "gold_answer": "the lodger",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.4379,
+          0.3802,
+          0.2957
+        ]
+      },
+      {
+        "query": "which wta player had a higher singles ranking to end last year, madison keys or daria kasatkina?",
+        "predicted": "Based on the provided context, Daria Kasatkina had a higher singles ranking to end last year. According to Source [2], Daria Kasatkina was ranked as high as world No. 8, achieved on 24 October 2022. There is no information in the context about Madison Keys' singles ranking at the end of last year.\n\nReferences:\n[1] Keys outlasts Kasatkina to win second Eastbourne title, Available: https://www.wtatennis.com/news/3563539/keys-outlasts-kasatkina-to-win-second-eastbourne-title\n[2] Daria Kasatkina - Wikipedia, Available: https://en.wikipedia.org/wiki/Daria_Kasatkina\n[3] Former champions Keys, Kasatkina set Charleston quarterfinal meeting, Available: https://www.wtatennis.com/news/3139957/former-champions-keys-kasatkina-set-charleston-quarterfinal-meeting\n[4] Daria Kasatkina | Player Stats & More \u2013 WTA Official, Available: https://www.wtatennis.com/players/322082/daria-kasatkina\n[5] WTA rankings - Wikipedia, Available: https://en.wikipedia.org/wiki/WTA_rankings\n",
+        "gold_answer": "madison keys",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7547,
+          0.7544,
+          0.7204
+        ]
+      },
+      {
+        "query": "how many family movies were there that came out in 1994?",
+        "predicted": "I do not know based on the context.\n\nReferences:\n[1] The 100+ Best Movies From 1994, Ranked By Fans, Available: https://www.ranker.com/crowdranked-list/best-movies-of-1994\n[2] 1994 in film - Wikipedia, Available: https://en.wikipedia.org/wiki/1994_in_film\n[3] All Pixar-Movies in Order of Release - IMDb, Available: https://www.imdb.com/list/ls022689944/\n[4] 2024 Release Schedule | FirstShowing.net, Available: https://www.firstshowing.net/schedule2024/\n[5] 'Schindler' on List for 12 Oscars | Festivals & Awards | Roger Ebert, Available: https://www.rogerebert.com/festivals/schindler-on-list-for-12-oscars\n",
+        "gold_answer": "109",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.583,
+          0.4495,
+          0.4489
+        ]
+      }
+    ],
+    "Graph RAG": [
+      {
+        "query": "how many 3-point attempts did steve nash average per game in seasons he made the 50-40-90 club?",
+        "predicted": "According to the provided context, in the 2005-06 season, Nash shot 43.9% from three-point range. However, it does not provide the exact number of three-point attempts per game for that season.\n\nIn the 2007-08, 2008-09, and 2009-10 seasons, Nash repeated the feat of making the 50-40-90 club, but the context does not provide the exact number of three-point attempts per game for those seasons.\n\nHowever, according to the 2005-06 season, Nash's three-point attempts per game can be calculated from his total three-point attempts and games played. In the 2005-06 season, Nash played 79 games and attempted 234 three-pointers. \n\nTo calculate the average three-point attempts per game, we can divide the total three-point attempts by the number of games played: 234 three-point attempts / 79 games = approximately 2.96 three-point attempts per game.\n\nSo, in the 2005-06 season, Steve Nash averaged approximately 2.96 three-point attempts per game.",
+        "gold_answer": "4 3-points attempts per game",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6588,
+          0.5927,
+          0.5764
+        ]
+      },
+      {
+        "query": "what is a movie to feature a person who can create and control a device that can manipulate the laws of physics?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "a movie that features a person who can create and control a device that can manipulate the laws of physics was \"the core\" in 2003, which starred aaron eckhart as a scientist who invents a device that can manipulate the laws of physics, allowing him to control gravity, time, and matter, and he must use this technology to save the earth from destruction after the planet's core suddenly stops rotating.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.4955,
+          0.4242,
+          0.4052
+        ]
+      },
+      {
+        "query": "where did the ceo of salesforce previously work?",
+        "predicted": "According to the context, Marc Benioff, the CEO of Salesforce, previously worked at Oracle as a former executive.",
+        "gold_answer": "marc benioff spent 13 years at oracle, before launching salesforce.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.5441,
+          0.538,
+          0.5037
+        ]
+      },
+      {
+        "query": "which movie won the oscar best visual effects in 2021?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "tenet",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7407,
+          0.7103,
+          0.6932
+        ]
+      },
+      {
+        "query": "what company in the dow jones is the best performer today?",
+        "predicted": "I do not know based on the context. The context only mentions that Verizon is the best performer in the Dow this month, but it does not provide information on the current best performer.",
+        "gold_answer": "salesforce",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6898,
+          0.6715,
+          0.6467
+        ]
+      },
+      {
+        "query": "in 2004, which animated film was recognized with the best animated feature film oscar?",
+        "predicted": "The film \"The Incredibles\" was recognized with the Best Animated Feature Film Oscar in 2004.",
+        "gold_answer": "finding nemo",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.8108,
+          0.7795,
+          0.7774
+        ]
+      },
+      {
+        "query": "on which date did sgml distribute dividends the first time",
+        "predicted": "I do not know based on the context. The context does not contain enough information to determine when SGML distributed dividends for the first time.",
+        "gold_answer": "none of the days",
+        "alt_ans": [
+          "invalid question"
+        ],
+        "retrieval_scores": [
+          0.6128,
+          0.5955,
+          0.5361
+        ]
+      },
+      {
+        "query": "what is the average gross for the top 3 pixar movies?",
+        "predicted": "Based on the provided context, the top 3 Pixar movies are Toy Story 4, Incredibles 2, and Toy Story 3. \n\nAccording to the context, Toy Story 4 earned $1.07 billion, Incredibles 2 earned $1.242 billion, and Toy Story 3 earned $1 billion. \n\nTo calculate the average, we need to add these numbers and divide by 3. \n\n$1.07 billion + $1.242 billion + $1 billion = $3.312 billion \n\n$3.312 billion / 3 = $1.104 billion \n\nSo, the average gross for the top 3 Pixar movies is approximately $1.104 billion.",
+        "gold_answer": "~$509,638,437",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6535,
+          0.6529,
+          0.6496
+        ]
+      },
+      {
+        "query": "what are the countries that are located in southern africa.",
+        "predicted": "The countries located in Southern Africa are Angola, Botswana, Lesotho, Mozambique, Namibia, South Africa, Swaziland, Zambia, and Zimbabwe.",
+        "gold_answer": "angola, botswana, the comoros, eswatini, lesotho, madagascar, malawi, mauritius, mozambique, namibia, south africa, zambia, and zimbabwe.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7396,
+          0.6874,
+          0.576
+        ]
+      },
+      {
+        "query": "which company in the s&p 500 index has the highest percentage of green energy usage?",
+        "predicted": "I do not know based on the provided context. The context does not contain information about the S&P 500 index or the green energy usage of its companies.",
+        "gold_answer": "the company with the highest percentage of renewable energy usage in the s&p 500 index is the estee lauder companies inc., with over 139% of its total power usage coming from green energy.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.638,
+          0.5978,
+          0.5559
+        ]
+      },
+      {
+        "query": "what's the cooling source of the koeberg nuclear power station?",
+        "predicted": "The Koeberg nuclear power station uses seawater for cooling, which is sourced from the South Atlantic Benguela Current.",
+        "gold_answer": "atlantic ocean",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7012,
+          0.5625,
+          0.5435
+        ]
+      },
+      {
+        "query": "when did hamburg become the biggest city of germany?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "invalid question",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6661,
+          0.622,
+          0.6176
+        ]
+      },
+      {
+        "query": "how much did voyager therapeutics's stock rise in value over the past month?",
+        "predicted": "I do not know based on the context. The provided sources do not contain information about the stock's value over the past month.",
+        "gold_answer": "-$3.26",
+        "alt_ans": [
+          "invalid question"
+        ],
+        "retrieval_scores": [
+          0.7319,
+          0.7262,
+          0.7163
+        ]
+      },
+      {
+        "query": "what was the total value of all corporate bond issuances in 2024 for the first week?",
+        "predicted": "According to the provided context, the total value of corporate bond issuances for the first week of 2024 is $45.2 billion.",
+        "gold_answer": "the first week of 2024 saw nearly $59 billion in high-grade bond issuance.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6212,
+          0.5791,
+          0.5439
+        ]
+      },
+      {
+        "query": "what is the ex-dividend date of microsoft in the 1st qtr of 2024",
+        "predicted": "Based on the provided context, the ex-dividend date of Microsoft in the 1st quarter of 2024 is not mentioned in the first two sources. However, in source [2], it is mentioned that Microsoft's upcoming ex-dividend date is on May 15, 2024, which is in the 2nd quarter of 2024. \n\nHowever, in source [5], it is mentioned that the Dividend History page provides a single page to review all of the aggregated Dividend payment information, and our partner, Quotemedia, provides the upcoming ex-dividend dates for the next month. Unfortunately, the information for the 1st quarter of 2024 is not available in the provided context.\n\nHowever, in source [1], it is mentioned that the last Microsoft Corporation (MSFT) ex-dividend date was on February 14, 2024.",
+        "gold_answer": "the ex-dividend date of microsoft in the 1st qtr of 2024 is feb 14, 2024",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.787,
+          0.7125,
+          0.6499
+        ]
+      },
+      {
+        "query": "which player took home grand slam championship in 2017?",
+        "predicted": "I do not know based on the provided context.",
+        "gold_answer": "rafael nadal won his 16th grand slam title at the 2017 u.s. open",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6235,
+          0.6187,
+          0.5688
+        ]
+      },
+      {
+        "query": "what is the most active volcano in the philippines?",
+        "predicted": "According to the provided context, the most active volcano in the Philippines is Mt. Mayon, located in the province of Albay in the Bicol region.",
+        "gold_answer": "mayon volcano",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.75,
+          0.7152,
+          0.6978
+        ]
+      },
+      {
+        "query": "what were 3 of the most watched halloween movies of all time?",
+        "predicted": "I do not know based on the provided context. The sources mention lists of the best Halloween movies, but they do not provide information on the most watched Halloween movies of all time.",
+        "gold_answer": "hocus pocus, halloween (2018), beetlejuice",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6031,
+          0.5454,
+          0.5329
+        ]
+      },
+      {
+        "query": "which player has the most career wins in the nfl among quarterbacks who have never been to a super bowl?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "philip rivers has the most career wins in the nfl among quarterbacks who have never been to a super bowl, with 134 wins.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7332,
+          0.7269,
+          0.7203
+        ]
+      },
+      {
+        "query": "how many number one hit songs does lady gaga have?",
+        "predicted": "Lady Gaga has 15 number-one songs on the U.S. Billboard Dance Club Songs chart, and she also has several number-one hits on the Billboard Hot 100 chart, including her collaborations with other artists.",
+        "gold_answer": "7",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.671,
+          0.6242,
+          0.5817
+        ]
+      },
+      {
+        "query": "who has had more number one hits on the us billboard dance/electronic songs chart, calvin harris or the chainsmokers?",
+        "predicted": "Based on the provided context, Calvin Harris has had 13 top 10s on the Hot Dance/Electronic Songs chart, but it does not specify the number of number one hits. However, it is mentioned that The Chainsmokers have had 6 total Hot Dance/Electronic Songs No. 1s.",
+        "gold_answer": "the chainsmokers",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.686,
+          0.6414,
+          0.6322
+        ]
+      },
+      {
+        "query": "from 1990 to 2000, how many songs did keith sweat release?",
+        "predicted": "I do not know based on the context. The provided sources mention Keith Sweat's albums and singles, but they do not provide a comprehensive list of all the songs he released from 1990 to 2000.",
+        "gold_answer": "8",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7042,
+          0.6634,
+          0.5896
+        ]
+      },
+      {
+        "query": "how many games did anthony davis miss in the 2021-2022 regular season?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "40",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.535,
+          0.5045,
+          0.493
+        ]
+      },
+      {
+        "query": "who were the producers of the movie paul blart: mall cop?",
+        "predicted": "The producers of the movie \"Paul Blart: Mall Cop\" were Kevin James, Adam Sandler, Jack Giarraputo, Todd Garner, and Barry Bernardi.",
+        "gold_answer": "adam sandler, jack giarraputo, kevin james, todd garner, barry bernardi",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.774,
+          0.6774,
+          0.628
+        ]
+      },
+      {
+        "query": "which company's stock has had the lowest trading activity this week, kind or  casi?",
+        "predicted": "I do not know based on the context. The provided sources do not contain information about the trading activity of various companies this week.",
+        "gold_answer": "casi",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.5615,
+          0.5528,
+          0.5477
+        ]
+      },
+      {
+        "query": "did taylor swifts debut album fearless launched in 2008 in us?",
+        "predicted": "No, Taylor Swift's debut album was actually \"Taylor Swift\" which was released on October 24, 2006. Fearless was her second studio album, released on November 11, 2008.",
+        "gold_answer": "invalid question",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7236,
+          0.7182,
+          0.7155
+        ]
+      },
+      {
+        "query": "which movie won the oscar best visual effects in 2006?",
+        "predicted": "I do not know based on the provided context.",
+        "gold_answer": "king kong",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7306,
+          0.7131,
+          0.6838
+        ]
+      },
+      {
+        "query": "what's the name of nashville's hockey team?",
+        "predicted": "The Nashville Predators.",
+        "gold_answer": "nashville predators",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6658,
+          0.6363,
+          0.5525
+        ]
+      },
+      {
+        "query": "which university has a higher student-to-faculty ratio, harvard or princeton?",
+        "predicted": "Based on the provided context, Harvard University has a higher student-to-faculty ratio compared to Princeton University. The ratios are as follows: \n\n- Harvard University: 7:1 (Source [1] and Source [3])\n- Princeton University: 4:1 (Source [1])",
+        "gold_answer": "harvard university",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.8148,
+          0.7578,
+          0.7431
+        ]
+      },
+      {
+        "query": "who is the person to win best actor award in 1994?",
+        "predicted": "Tom Hanks won the Best Actor award in 1994 for his role in \"Philadelphia\".",
+        "gold_answer": "tom hanks",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6161,
+          0.6027,
+          0.6023
+        ]
+      },
+      {
+        "query": "how long is the longest river in alabama?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "the longest river that flows through alabama, the tennessee river, is 652 miles long.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6356,
+          0.6045,
+          0.4296
+        ]
+      },
+      {
+        "query": "did c\u00e1diz emerge victorious in yesterday's game?",
+        "predicted": "Based on the provided context, I do not have enough information to determine if C\u00e1diz emerged victorious in yesterday's game.",
+        "gold_answer": "invalid question",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6602,
+          0.5954,
+          0.5876
+        ]
+      },
+      {
+        "query": "can you tell me the earnings per share of lgstw?",
+        "predicted": "I do not know based on the context. The context does not contain any information about a company named \"lgstw\".",
+        "gold_answer": "i don't know",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.515,
+          0.5003,
+          0.4975
+        ]
+      },
+      {
+        "query": "what was the closing price of hamilton lane yesterday?",
+        "predicted": "I do not know based on the context. The provided context does not contain information about the closing price of Hamilton Lane (HLNE) stock for yesterday.",
+        "gold_answer": "$116.95",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.5852,
+          0.5771,
+          0.5191
+        ]
+      },
+      {
+        "query": "what are 3 examples of stocks that increased in value today?",
+        "predicted": "I do not know based on the context. The provided sources do not contain information about the stocks increasing in value today.",
+        "gold_answer": "here are 3 stocks that increased in value today. knsl, ttd, and coin",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.5575,
+          0.5571,
+          0.545
+        ]
+      },
+      {
+        "query": "who was the coach for the seattle seahawks?",
+        "predicted": "The current head coach of the Seattle Seahawks is Mike Macdonald.",
+        "gold_answer": "mike macdonald",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7814,
+          0.6894,
+          0.674
+        ]
+      },
+      {
+        "query": "can you tell me the date that randall wallace was born?",
+        "predicted": "Randall Wallace was born on July 28, 1949.",
+        "gold_answer": "1949-07-28",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.553,
+          0.5364,
+          0.4949
+        ]
+      },
+      {
+        "query": "which team did rayo vallecano play against last week?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "betis",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6704,
+          0.6669,
+          0.5598
+        ]
+      },
+      {
+        "query": "how many english titles have manchester city won?",
+        "predicted": "Manchester City have won nine English top-flight titles.",
+        "gold_answer": "manchester city have won nine english football titles.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6921,
+          0.6433,
+          0.6206
+        ]
+      },
+      {
+        "query": "which player has the most career hat tricks in the nhl among players who have never won the hart trophy?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "mike bossy has the most career hat tricks in the nhl among players who have never won the hart trophy, with 39 hat tricks.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7179,
+          0.656,
+          0.5113
+        ]
+      },
+      {
+        "query": "who has won the f1 drivers' championship at least five times?",
+        "predicted": "Based on the provided context, the following drivers have won the F1 Drivers' Championship at least five times:\n\n1. Michael Schumacher (7 titles) - won 5 titles with Ferrari and 2 with Benetton.\n2. Lewis Hamilton (7 titles) - won 6 titles with Mercedes and 1 with McLaren.\n3. Juan Manuel Fangio (5 titles) - not mentioned in the provided context, but he is a well-known F1 driver who won 5 titles.\n4. Sebastian Vettel (4 titles) - not mentioned in the provided context, but he is a well-known F1 driver who won 4 titles.\n5. Alain Prost (4 titles) - not mentioned in the provided context, but he is a well-known F1 driver who won 4 titles.\n6. Ayrton Senna (3 titles) - not mentioned in the provided context, but he is a well-known F1 driver who won 3 titles.\n7. Niki Lauda (3 titles) - not mentioned in the provided context, but he is a well-known F1 driver who won 3 titles.\n\nHowever, based on the provided context, the following drivers have won the F1 Drivers' Championship at least five times:\n\n1. Michael Schumacher (7 titles)\n2. Lewis Hamilton (7 titles)\n3. Juan Manuel Fangio (5 titles)",
+        "gold_answer": "michael schumacher, lewis hamilton, and juan manuel fangio have all won the f1 drivers' championship at least five times.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6788,
+          0.6677,
+          0.6289
+        ]
+      },
+      {
+        "query": "what were tesla's quarerly reported earnings per share for the fiscal year 2022?",
+        "predicted": "I do not know based on the context. The provided sources do not contain information about Tesla's quarterly reported earnings per share for the fiscal year 2022.",
+        "gold_answer": "q1: $0.95, q2: $0.76, q3: $0.95, q4: $1.19",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7148,
+          0.6459,
+          0.6346
+        ]
+      },
+      {
+        "query": "which movie was created first, a walk to remember or the notebook?",
+        "predicted": "The Notebook was created first. The novel \"The Notebook\" was published in 1996, and the movie was released in 2004. The novel \"A Walk to Remember\" was published in 1999, and the movie was released in 2002.",
+        "gold_answer": "a walk to remember was released first in january 25 2002 while the notebook was released june 25, 2004",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.62,
+          0.6081,
+          0.5946
+        ]
+      },
+      {
+        "query": "longest known length of a tiger shark in meters.",
+        "predicted": "According to Source [3], the longest known length of a tiger shark is over 5 meters (16 ft 5 in).",
+        "gold_answer": "7.5 meters",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7411,
+          0.6547,
+          0.6357
+        ]
+      },
+      {
+        "query": "what car did roman pearce drive in the second fast and furious movie?",
+        "predicted": "According to Source [3], Roman Pearce drove a classic Chevrolet Camaro in the second Fast and Furious movie, \"2 Fast 2 Furious\".",
+        "gold_answer": "tyrese gibson as roman pearce: brian's childhood friend who is on house arrest after serving time in prison, for which he still blames brian. he drives a 2003 mitsubishi eclipse spyder gts.",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.6652,
+          0.5595,
+          0.5411
+        ]
+      },
+      {
+        "query": "who directed bridget jones: the edge of reason, can you tell me?",
+        "predicted": "Beeban Kidron directed Bridget Jones: The Edge of Reason.",
+        "gold_answer": "beeban kidron",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7126,
+          0.6294,
+          0.4342
+        ]
+      },
+      {
+        "query": "what school won the women's gymnastics ncaa championship in 2022?",
+        "predicted": "Oklahoma won the 2022 NCAA women's gymnastics championship, which was their fifth team title.",
+        "gold_answer": "oklahoma",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.741,
+          0.6892,
+          0.63
+        ]
+      },
+      {
+        "query": "can you tell me what the lodger title was originally?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "the lodger",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.4379,
+          0.3802,
+          0.2957
+        ]
+      },
+      {
+        "query": "which wta player had a higher singles ranking to end last year, madison keys or daria kasatkina?",
+        "predicted": "Based on the provided context, Daria Kasatkina had a higher singles ranking to end last year. According to Source [2], Daria Kasatkina was ranked as high as world No. 8, achieved on 24 October 2022. There is no information in the context about Madison Keys' singles ranking at the end of last year.",
+        "gold_answer": "madison keys",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.7547,
+          0.7544,
+          0.7204
+        ]
+      },
+      {
+        "query": "how many family movies were there that came out in 1994?",
+        "predicted": "I do not know based on the context.",
+        "gold_answer": "109",
+        "alt_ans": [],
+        "retrieval_scores": [
+          0.583,
+          0.4495,
+          0.4489
+        ]
+      }
+    ]
+  }
+}

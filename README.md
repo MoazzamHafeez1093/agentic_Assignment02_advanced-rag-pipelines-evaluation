@@ -10,7 +10,7 @@ Real-world datasets are rarely perfect. We are working with a **noisy, pre-crawl
 
 ## 🚀 The 4 Pipelines Evaluated
 
-This project implements and compares the following architectures, all pointing to a shared FAISS vector index of over 14,000 document chunks:
+This project implements and compares the following architectures, all pointing to a shared FAISS vector index of 3,546 document chunks:
 
 1. **RAG Fusion (Multi-Query + Reciprocal Rank Fusion)**
    *Generates multiple variant phrasings of your question to improve recall, fetches documents for all variants, and mathematically fuses the rankings together using RRF.*
@@ -66,6 +66,17 @@ python run_evaluation.py
 ```
 
 Once finished, check the generated `eval_results.json` file for the accuracy breakdowns!
+
+### Evaluation Results
+
+| Pipeline    | Accuracy | Correct | Total |
+|-------------|----------|---------|-------|
+| HyDE        | 42.00%   | 21      | 50    |
+| CRAG        | 40.00%   | 20      | 50    |
+| Graph RAG   | 38.00%   | 19      | 50    |
+| RAG Fusion  | 36.00%   | 18      | 50    |
+
+**Best performer: HyDE (42%)**. See [`docs/report.md`](docs/report.md) for a detailed analysis and production recommendation.
 
 ---
 
