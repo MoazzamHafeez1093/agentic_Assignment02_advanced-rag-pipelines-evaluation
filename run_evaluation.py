@@ -96,7 +96,7 @@ def main():
     for name, r in results.items():
         print(f"{name:15s} | {r['accuracy']:>7.2f}% | {r['correct']:>7d} | {r['total']:>5d}")
 
-    # Save results to file
+    # Save results to JSON
     output = {
         "summary": results,
         "details": all_details,
@@ -104,6 +104,22 @@ def main():
     with open("eval_results.json", "w") as f:
         json.dump(output, f, indent=2)
     print(f"\nResults saved to eval_results.json")
+
+    # Save plain-text summary to eval_results.txt
+    lines = []
+    lines.append("=" * 50)
+    lines.append("EVALUATION RESULTS — RAG in the Wild")
+    lines.append(f"Dev examples evaluated: {len(examples)}")
+    lines.append("=" * 50)
+    lines.append(f"{'Pipeline':15s} | {'Accuracy':>8s} | {'Correct':>7s} | {'Total':>5s}")
+    lines.append("-" * 45)
+    for name, r in results.items():
+        lines.append(f"{name:15s} | {r['accuracy']:>7.2f}% | {r['correct']:>7d} | {r['total']:>5d}")
+    lines.append("=" * 50)
+    txt_content = "\n".join(lines) + "\n"
+    with open("eval_results.txt", "w") as f:
+        f.write(txt_content)
+    print(f"Results saved to eval_results.txt")
 
 if __name__ == "__main__":
     main()

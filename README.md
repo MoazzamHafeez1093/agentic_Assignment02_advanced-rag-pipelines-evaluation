@@ -37,7 +37,6 @@ First, install the Python dependencies which power the embedding models (Sentenc
 ```bash
 # Install required Python packages
 pip install -r requirements.txt
-pip install tenacity # Ensures API rate-limiting is handled gracefully
 ```
 
 ### 2. Configure Your Environment
